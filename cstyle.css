@@ -1,0 +1,33 @@
+body {
+    background-color: #222;
+    font-family: monospace;
+    color: #0d0;
+    padding: 20;
+    font-size: 12pt;
+}
+
+.txt {
+    color: #bbb;
+}
+.prompt
+{
+    font-weight: bolder;
+    color: #0f0;
+}
+.blink {
+    animation: blink-animation 1s steps(5,start) infinite;
+    -webkit-animation: blink-animation 1s steps(5,start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+.error {
+    color: #d00;
+}
