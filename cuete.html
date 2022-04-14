@@ -11,7 +11,7 @@
         <br />
         Copyright (c) Microsoft Corporation.
         <br /><br />
-        Loading personal and system profiles took <span id="loadtime" class="txt"></span>ms.
+        Loading personal and system profiles took <span id="loadtime" class="txt"></span> ms.
         <br /><br />
 
         <span class="prompt">C:\> </span> date<br />
@@ -35,14 +35,17 @@
         var date = new Date();
         document.getElementById("timestamp").innerHTML = date.toUTCString()
         document.getElementById("localtime").innerHTML = date.toLocaleString()
-        var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
-        document.getElementById("loadtime").innerHTML = loadTime
-        </script>
+    </script>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <script>
         $.getJSON("https://api.ipify.org?format=json", 
         function(data) {
             $("#ipaddr").html(data.ip);
         }) 
+    </script>
+
+    <script defer>
+        var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+        document.getElementById("loadtime").innerHTML = loadTime
     </script>
 </body>
