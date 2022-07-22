@@ -45,7 +45,7 @@
     </script>
 
     <script defer>
-        var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+        var loadTime = window.performance.getEntriesByName("duration");
         document.getElementById("loadtime").innerHTML = loadTime
     </script>
 </body>
