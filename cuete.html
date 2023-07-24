@@ -7,11 +7,7 @@
 </head>
 <body>
     <div>
-        PowerShell
-        <br />
-        Copyright (c) Microsoft Corporation.
         <br /><br />
-        Loading personal and system profiles took <span id="loadtime" class="txt"></span> ms.
         <br /><br />
 
         <span class="prompt">C:\> </span> date<br />
@@ -42,10 +38,5 @@
         function(data) {
             $("#ipaddr").html(data.ip);
         }) 
-    </script>
-
-    <script>
-        var loadTime = window.performance.getEntriesByName("duration");
-        document.getElementById("loadtime").innerHTML = loadTime
     </script>
 </body>
