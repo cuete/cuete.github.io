@@ -6,6 +6,11 @@ body {
     font-size: 12pt;
 }
 
+a {
+    color: rgb(255, 238, 2);
+    text-decoration: underline;
+    }
+
 .txt {
     color: #bbb;
 }
