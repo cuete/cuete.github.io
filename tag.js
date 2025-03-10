@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var datetime = getCurrentDateTime();
         var inputText = inputElement.value + '_' + datetime;
         var encodedText = encodeToBase64(inputText);
-        outputElement.innerHTML = inputText + '<br><br>' + '-ae<img src="https://hostedservices.blob.core.windows.net/$web/eof.jpg?type=' + encodedText + '">' + '<br><br>';
+        outputElement.innerHTML = inputText + '<br>' + encodedText + '<br><br>' + '-ae<img src="https://hostedservices.blob.core.windows.net/$web/eof.jpg?type=' + encodedText + '">' + '<br><br>';
     });
     decodeButton.addEventListener('click', function () {
         var inputText = inputElement.value;
