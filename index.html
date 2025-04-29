@@ -1,21 +1,37 @@
-<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cstyle.css">
+</head>
+<body>
+    <div>
+        <br /><br />
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <title>Hello world!</title>
-    </head>
-    <body>
-        <br />
-        Hello world!
-        <br />
-        <hr>
-        <br />
-        <br />
-        .
-    </body>
-</html>
+        <span class="prompt">C:\> </span> date<br />
+        UTC time is <span id="timestamp" class="txt"></span><br />
+        Your local time is <span id="localtime" class="txt"></span>
+        <br /><br />
+
+        <span class="prompt">C:\> </span> ip<br />
+        Your IP address is <span id="ipaddr" class="txt"></span>
+        <br /><br />
+        
+        <span class="prompt">C:\> </span> cat init.txt<br />
+        <span class="txt">it little profits that an idle site...</span>
+        <br /><br />
+
+        <span class="prompt">C:\> </span><span class="blink">█</span>
+    </div>
+
+    <script>
+        var date = new Date();
+        document.getElementById("timestamp").innerHTML = date.toUTCString()
+        document.getElementById("localtime").innerHTML = date.toString()
+    </script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script>
+        $.getJSON("https://api64.ipify.org?format=json", 
+        function(data) {
+            $("#ipaddr").html(data.ip);
+        }) 
+    </script>
+</body>
