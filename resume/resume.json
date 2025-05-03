@@ -1,0 +1,172 @@
+{
+  "name": "Alejandro Echeverria",
+  "title": "Senior Software Engineer",
+  "contact": {
+    "email": "aluxit@outlook.com",
+    "linkedin": "https://linkedin.com/in/cuete",
+    "phone": "+1 360.320.4060"
+  },
+  "summary": "As a Full Stack Software Engineer with over 15 years of experience delivering successful products, my goal is to engineer innovative technical solutions to address complex business challenges. I specialize in leveraging the newest cloud and AI tools to create scalable, secure, resilient, and intelligent systems that drive business growth. I stay ahead of industry trends by continuously updating my skills and knowledge with the latest technological trends and tools.",
+  "technical skills": [
+    {
+    "category": "Programming Languages",
+    "skills": ["OOP", "C#", "Python", "TypeScript", "SQL", "PowerShell", "JavaScript", "React", "Node.js", "Javascript"]
+    },
+    {
+    "category": "Core Concepts",
+    "skills": ["Data structures", "algorithms", "design patterns and fundamentals", "performance principles"]
+    },
+    {
+    "category": "Frameworks",
+    "skills": [".Net", "Node.js", "React", "Entity Framework"]
+    },
+    {
+    "category": "Databases and Storage",
+    "skills": ["SQL", "NoSQL", "Data Lake", "Redis"]
+    },
+    {
+    "category": "Security and Compliance",
+    "skills": [
+        "Identity and Authentication practices and protocols (SAML, Oauth2.0, SSO)",
+        "Regulation compliance (GDPR, PII)",
+        "Threat modeling"
+    ]
+    },
+    {
+    "category": "AI and Machine Learning",
+    "skills": [
+        "Generative and analysis models",
+        "PyTorch",
+        "TensorFlow",
+        "Azure AI and ML Studio"
+    ]
+    },
+    {
+    "category": "Cloud Services",
+    "skills": ["Azure", "AWS"]
+    },
+    {
+    "category": "Systems Administration",
+    "skills": ["Linux", "NIX", "Windows"]
+    },
+    {
+    "category": "Infrastructure and Virtualization",
+    "skills": ["Infrastructure as Code (IAC)", "containerization", "virtualization", "Docker"]
+    },
+    {
+    "category": "Networking",
+    "skills": [
+        "OSI Model",
+        "Network protocols and tools (TCP/IP, HTTP)",
+        "Zero Trust Network security model strategies"
+    ]
+    },
+    {
+    "category": "Incident Management",
+    "skills": [
+        "Troubleshooting",
+        "incident management",
+        "escalation",
+        "on-call crisis response"
+    ]
+    },
+    {
+    "category": "Software Development Lifecycle (SDL)",
+    "skills": [
+        "Scrum",
+        "Agile",
+        "DevOps",
+        "systems architecture",
+        "solutions architecture",
+        "systems design",
+        "documentation"
+    ]
+    }
+],
+  "soft skills": [
+    "Project management",
+    "costing and feature tracking",
+    "Analytical",
+    "attention to details",
+    "problem solving",
+    "Collaborative",
+    "cross-team communication", 
+    "technical communication",
+    "non-technical communication",
+    "Leadership",
+    "self-starter",
+    "self-motivated",
+    "accountability",
+    "Adaptability",
+    "continuous learning",
+    "Regulatory awareness"
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer II",
+      "company": "Microsoft",
+      "years": "2019 - 2025",
+      "location": "Redmond, WA",
+      "description": [
+        "Owned and drove the development of high-impact large-scale enterprise cloud applications from business requirements to maintenance and support.",
+        "Leveraged Azure cloud infrastructure, DevOps practices, CICD, AI/ML, and data analytics to deliver global, world-class enterprise software products.",
+        "Drove threat modeling and implemented zero-trust strategies to secure critical services.",
+        "Managed incident response to high-priority incidents and outages.",
+        "Delivered global solutions for consumer and enterprise customer support: communication services, APIs, ML and IA speech recognition and analytics, cognitive tools, and metric processing and analysis, while ensuring security and information privacy."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Motiv Inc. (Microsoft Vendor)",
+      "years": "2017 - 2019",
+      "location": "Redmond, WA",
+      "description": [
+        "Developed secure, high-throughput, cloud applications at Microsoft's Core Platform Engineering Group.",
+        "Developed APIs and microservices, identified and mitigated software vulnerabilities, enforced data privacy requirements, security, and compliance.",
+        "Implemented DevOps processes and hardened resources and applications to meet world-class industry standards."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Getty Images",
+      "years": "2012 - 2017",
+      "location": "Seattle, WA",
+      "description": [
+        "Developed and tested web services and databases handling confidential financial data and the time-sensitive royalty calculation processes.",
+        "Areas of experience included .Net development, relational databases, message brokers, monitoring and integration platforms, CICD, DevOps and Agile methodologies, and on-call engineering support.",
+        "Getty Images is the global leader in multimedia and royalty services."
+      ]
+    },
+    {
+      "role": "Software Engineer in Test",
+      "company": "iSoftStone Inc.",
+      "years": "2007 - 2012",
+      "location": "Kirkland, WA",
+      "description": [
+        "Designed and executed automated tests for web, mobile, and desktop software products.",
+        "Developed unit and integration tests for web applications and APIs using automated frameworks and custom scripting.",
+        "Wrote test plans and test suites, researched, and implemented test automation tools and frameworks.",
+        "Led and mentored offshore and on-site testing teams.",
+        "iSoftStone is a global IT and business services provider for Fortune 100 technology companies."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Electronics Engineering",
+      "institution": "Universidad del Valle de Guatemala"
+    },
+    {
+      "degree": "Azure Security Engineer Associate Certificate",
+      "institution": "Microsoft"
+    },
+    {
+      "degree":"Solutions Architecture Certificate",
+      "institution": "University of Washington"
+    },
+    {
+      "degree": "Telecommunications and Networks",
+      "institution": "America Movil"
+    }
+  ]
+}
