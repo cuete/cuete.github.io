@@ -4,268 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #4f46e5, #7c3aed);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .header p {
-            opacity: 0.9;
-            font-size: 1.1rem;
-        }
-
-        .form-section {
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.8);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
-
-        .task-form {
-            display: grid;
-            grid-template-columns: 1fr 1fr 2fr auto;
-            gap: 20px;
-            align-items: end;
-        }
-
-        .form-group {
-            position: relative;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #374151;
-            font-size: 0.9rem;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 16px;
-            border: 2px solid #e5e7eb;
-            border-radius: 12px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            background: white;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #4f46e5;
-            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-            transform: translateY(-2px);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 45px;
-            font-family: inherit;
-        }
-
-        .submit-btn {
-            background: linear-gradient(135deg, #10b981, #059669);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 12px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            height: fit-content;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
-        }
-
-        .submit-btn:active {
-            transform: translateY(0);
-        }
-
-        .tasks-section {
-            padding: 40px;
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #1f2937;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .tasks-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .tasks-table th {
-            background: linear-gradient(135deg, #374151, #4b5563);
-            color: white;
-            padding: 20px;
-            text-align: left;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .tasks-table td {
-            padding: 20px;
-            border-bottom: 1px solid #f3f4f6;
-            vertical-align: top;
-        }
-
-        .tasks-table tr:hover {
-            background: #f8fafc;
-            transform: scale(1.01);
-            transition: all 0.3s ease;
-        }
-
-        .tasks-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        .datetime {
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-            color: #6b7280;
-            background: #f3f4f6;
-            padding: 4px 8px;
-            border-radius: 6px;
-            display: inline-block;
-        }
-
-        .description {
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #374151;
-        }
-
-        .empty-state {
-            text-align: center;
-            padding: 60px 20px;
-            color: #9ca3af;
-        }
-
-        .empty-state img {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 20px;
-            opacity: 0.5;
-        }
-
-        .delete-btn {
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .delete-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);
-        }
-
-        .task-id {
-            font-family: 'Courier New', monospace;
-            font-size: 0.8rem;
-            color: #9ca3af;
-            background: #f9fafb;
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-
-        @media (max-width: 768px) {
-            .task-form {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            
-            .container {
-                margin: 10px;
-                border-radius: 15px;
-            }
-            
-            .form-section, .tasks-section {
-                padding: 20px;
-            }
-            
-            .tasks-table {
-                font-size: 0.9rem;
-            }
-            
-            .tasks-table th,
-            .tasks-table td {
-                padding: 12px 8px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="task.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Task Manager</h1>
-            <p>Track your tasks with start and end times</p>
+            <h1>Tasks</h1>
         </div>
 
         <div class="form-section">
             <form id="taskForm" class="task-form">
                 <div class="form-group">
-                    <label for="startDateTime">Start Date & Time</label>
+                    <label for="startDateTime">Start</label>
                     <input type="datetime-local" id="startDateTime" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="endDateTime">End Date & Time</label>
+                    <label for="endDateTime">End</label>
                     <input type="datetime-local" id="endDateTime" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="description">Task Description</label>
-                    <textarea id="description" placeholder="Enter task description..." required></textarea>
+                    <label for="description">Task</label>
+                    <input type="text" id="description" placeholder="Enter task description..." required>
                 </div>
                 
                 <button type="submit" class="submit-btn">Add Task</button>
@@ -273,9 +34,11 @@
         </div>
 
         <div class="tasks-section">
-            <h2 class="section-title">Recorded Tasks</h2>
             <div id="tasksContainer">
                 <!-- Tasks will be populated here -->
+            </div>
+            <div style="text-align:right; margin-bottom:10px;">
+                <button class="delete-btn" id="clearAllBtn" type="button">Clear All</button>
             </div>
         </div>
     </div>
@@ -287,6 +50,13 @@
                 this.initializeEventListeners();
                 this.renderTasks();
                 this.setDefaultDateTime();
+                document.getElementById('clearAllBtn').addEventListener('click', () => this.clearAllTasks());
+            }
+
+            clearAllTasks() {
+                this.tasks = [];
+                this.saveTasks();
+                this.renderTasks();
             }
 
             loadTasks() {
@@ -363,23 +133,16 @@
             }
 
             deleteTask(taskId) {
-                if (confirm('Are you sure you want to delete this task?')) {
-                    this.tasks = this.tasks.filter(task => task.id !== taskId);
-                    this.saveTasks();
-                    this.renderTasks();
-                }
+                this.tasks = this.tasks.filter(task => task.id !== taskId);
+                this.saveTasks();
+                this.renderTasks();
             }
 
             formatDateTime(dateTimeString) {
                 const date = new Date(dateTimeString);
-                return date.toLocaleString('en-US', {
-                    year: 'numeric',
-                    month: 'short',
-                    day: '2-digit',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    hour12: true
-                });
+                const hours = String(date.getHours()).padStart(2, '0');
+                const minutes = String(date.getMinutes()).padStart(2, '0');
+                return `${hours}:${minutes}`;
             }
 
             calculateDuration(start, end) {
@@ -410,35 +173,36 @@
                     return;
                 }
 
+                // Wrap the table in a div for horizontal scrolling
                 const tableHTML = `
+                    <div style="overflow-x: auto;">
                     <table class="tasks-table">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Start Time</th>
-                                <th>End Time</th>
+                                <th>Start</th>
+                                <th>End</th>
                                 <th>Duration</th>
-                                <th>Description</th>
+                                <th>Task</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             ${this.tasks.map(task => `
                                 <tr>
-                                    <td><span class="task-id">#${task.id.slice(-6)}</span></td>
                                     <td><span class="datetime">${this.formatDateTime(task.startDateTime)}</span></td>
                                     <td><span class="datetime">${this.formatDateTime(task.endDateTime)}</span></td>
                                     <td><strong>${this.calculateDuration(task.startDateTime, task.endDateTime)}</strong></td>
                                     <td><div class="description">${task.description}</div></td>
                                     <td>
                                         <button class="delete-btn" onclick="taskManager.deleteTask('${task.id}')">
-                                            Delete
+                                            X
                                         </button>
                                     </td>
                                 </tr>
                             `).join('')}
                         </tbody>
                     </table>
+                    </div>
                 `;
 
                 container.innerHTML = tableHTML;
