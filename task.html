@@ -44,7 +44,6 @@
     </div>
 
     <script>
-        // Set today's date in the <h1>
         document.addEventListener('DOMContentLoaded', function() {
             const today = new Date();
             const yyyy = today.getFullYear();
@@ -183,7 +182,6 @@
                     return;
                 }
 
-                // Wrap the table in a div for horizontal scrolling
                 const tableHTML = `
                     <div style="overflow-x: auto;">
                     <table class="tasks-table">
@@ -219,7 +217,6 @@
             }
         }
 
-        // Initialize the task manager
         const taskManager = new TaskManager();
     </script>
 </body>
