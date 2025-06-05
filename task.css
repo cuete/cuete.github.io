@@ -175,14 +175,14 @@ body {
 
 .empty-state {
     text-align: center;
-    padding: 60px 20px;
+    padding: 10px 10px;
     color: #9ca3af;
 }
 
 .empty-state img {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
     opacity: 0.5;
 }
 
@@ -209,6 +209,12 @@ body {
     background: #f9fafb;
     padding: 2px 6px;
     border-radius: 4px;
+}
+
+.clear-all{
+    padding: 10px 20px;
+    text-align: right;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
