@@ -1,225 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro Echeverria - Resume</title>
-    <style>
-        @media print {
-            body { margin: 0; }
-            @page { margin: 0.75in; }
-        }
-
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 8.5in;
-            margin: 0 auto;
-            padding: 0.75in;
-            background: white;
-        }
-
-        h1 {
-            color: #2c3e50;
-            font-size: 28px;
-            margin-bottom: 5px;
-            text-align: center;
-            border-bottom: 3px solid #27ae60;
-            padding-bottom: 10px;
-        }
-
-        .subtitle {
-            font-size: 16px;
-            color: #555;
-            text-align: center;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .contact {
-            text-align: center;
-            font-size: 11px;
-            color: #666;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .contact a {
-            color: #27ae60;
-            text-decoration: none;
-        }
-
-        h2 {
-            color: #2c3e50;
-            font-size: 16px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #27ae60;
-        }
-
-        h3 {
-            color: #2c3e50;
-            font-size: 13px;
-            margin-top: 15px;
-            margin-bottom: 3px;
-            font-weight: 600;
-        }
-
-        .job-date {
-            font-size: 11px;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 8px;
-        }
-
-        p, li {
-            font-size: 11px;
-            text-align: justify;
-            margin-bottom: 8px;
-        }
-
-        ul {
-            margin-top: 5px;
-            margin-bottom: 15px;
-            padding-left: 25px;
-        }
-
-        li {
-            margin-bottom: 6px;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .job {
-            margin-bottom: 18px;
-            page-break-inside: avoid;
-        }
-
-        /* AI-friendly semantic tags */
-        .professional-summary,
-        .technical-skills,
-        .soft-skills,
-        .experience,
-        .education,
-        .certifications {
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Alejandro Echeverria</h1>
-        <div class="subtitle">Senior Data and AI Solutions Engineer</div>
-        <div class="contact">
-            <a href="mailto:aetxe.plus@outlook.com">aetxe.plus@outlook.com</a> |
-            <a href="https://linkedin.com/in/cuete">linkedin.com/in/cuete</a> |
-            <a href="https://github.com/cuete">github.com/cuete</a> |
-            +1 360.320.4060
-        </div>
-    </header>
-
-    <section class="professional-summary section">
-        <h2>Professional Summary</h2>
-        <p>A highly skilled Full Stack Senior Software Engineer, I excel in architecting data flows and AI-powered solutions. Using deep technical knowledge, dynamic project management and communication skills, I specialize in delivering scalable, secure, and compliant solutions that transform ambiguity and raw data into clear, actionable insights for industry leaders and research decision-makers.</p>
-    </section>
-
-    <section class="technical-skills section">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Solutions Architecture—designing comprehensive technical solutions, overseeing architecture, and driving successful implementation.</li>
-            <li>Proficient in generative and analysis ML and AI tools and models.</li>
-            <li>Expert in cloud architecture.</li>
-            <li>Programming language polyglot: C#, Python, JavaScript, R, TypeScript, SQL, and PowerShell.</li>
-            <li>Proficient in data structures, algorithms, design patterns, and performance principles.</li>
-            <li>Frameworks expertise includes .NET, Node.js, Entity Framework, and Microsoft Fabric.</li>
-            <li>Experience with databases and storage solutions such as SQL, NoSQL, Data Lake, Redis, and Blob.</li>
-            <li>Cloud security and threat modeling expertise, including identity and authentication (SAML, OAuth2.0, SSO).</li>
-            <li>Regulation-compliant implementations (GDPR, CCPA, HIPAA).</li>
-            <li>Experience with Infrastructure as Code (IaC) using ARM and Terraform.</li>
-            <li>Containerization and orchestration with Docker and Kubernetes.</li>
-            <li>CI/CD tools and practices like Azure DevOps and GitHub Actions.</li>
-            <li>Deep understanding of network protocols (TCP/IP, HTTP) and Zero Trust Network security model strategies.</li>
-            <li>Linux systems administration and internals.</li>
-            <li>Skilled in troubleshooting, incident management, escalation, and on-call crisis response.</li>
-            <li>Comprehensive understanding of Software Development Lifecycle (SDL), including Scrum, Agile, and DevOps.</li>
-        </ul>
-    </section>
-
-    <section class="soft-skills section">
-        <h2>Soft Skills</h2>
-        <ul>
-            <li>Technical project management: scoping, coordinating workflows, budgeting, and tracking deliverables.</li>
-            <li>Industry and research experience.</li>
-            <li>Workflow optimization and KPI-driven project delivery.</li>
-            <li>Data-driven business insights, actionable metric creation from large raw data.</li>
-            <li>Collaborative and effective cross-team communication, both technical and non-technical.</li>
-            <li>Analysis, attention to detail, and problem-solving.</li>
-            <li>Leadership, initiative, motivation, and accountability.</li>
-            <li>Adaptability and a mindset focused on continuous learning.</li>
-            <li>Security-oriented, with a focus on data privacy and responsible use of AI.</li>
-        </ul>
-    </section>
-
-    <section class="experience section">
-        <h2>Professional Experience</h2>
-
-        <article class="job">
-            <h3>Senior Software Engineer (Data and Statistical Modeling) – Gates Foundation</h3>
-            <div class="job-date">2025 - Current | Seattle, WA</div>
-            <p>At the Institute for Disease Modeling (IDM), I collaborate closely with global health researchers to transform complex epidemiology and simulation data into effective visualizations. These visual tools enable stakeholders to better interpret research findings and support data-driven decision-making in the context of infectious disease eradication efforts. I lead the prototyping and delivery of packaged solutions for direct adoption by our partner researchers in leading global health institutions and LMICs. I engage in identifying gaps within research data and processes, actively seeking collaboration opportunities with experts to foster interdisciplinary partnerships, evaluate and recommend new technology adoption to maximize the Foundation's impact in the Global Health domain.</p>
-        </article>
-
-        <article class="job">
-            <h3>Senior AI Solutions Consultant – Dura Digital</h3>
-            <div class="job-date">2025 | Seattle, WA</div>
-            <p>As Senior AI Solutions Consultant, I architected and delivered AI solutions for workflow automation in healthcare. I provided clarity to complex projects and drove business value by helping organizations adopt AI for greater efficiency. Solutions were secure, scalable, and compliant, enabling streamlined processes and unlocking new operational benefits. Dura Digital is a global IT consulting and services firm dedicated to delivering business, data, and AI-driven growth solutions.</p>
-        </article>
-
-        <article class="job">
-            <h3>Software Engineer II – Microsoft</h3>
-            <div class="job-date">2019 – 2025 | Redmond, WA</div>
-            <p>I was responsible for driving the development of high-impact, large-scale enterprise cloud applications from initial business requirements to maintenance and support. I utilized Azure cloud infrastructure, DevOps practices, CI/CD, AI/ML, and data analytics to deliver global, world-class enterprise software products. I conducted threat modeling and implemented zero-trust strategies to secure critical services and managed incident response for high-priority incidents and outages. I delivered global solutions for consumer and enterprise customer support, including AI Services, Communication Services, APIs, machine learning and intelligent automation, speech recognition and analytics, cognitive tools, and metric processing and analysis while ensuring security and information privacy.</p>
-        </article>
-
-        <article class="job">
-            <h3>Software Engineer - Motiv Inc. (Microsoft Contract)</h3>
-            <div class="job-date">2017 – 2019 | Redmond, WA</div>
-            <p>I developed secure, high-throughput, cloud applications at Microsoft's Core Platform Engineering Group. I developed APIs and microservices, identified and mitigated software vulnerabilities, enforced data privacy requirements, security, and compliance, implemented DevOps processes, and hardened resources and applications to meet world-class industry standards.</p>
-        </article>
-
-        <article class="job">
-            <h3>Software Engineer - Getty Images</h3>
-            <div class="job-date">2012 – 2017 | Seattle, WA</div>
-            <p>I developed and tested web services and databases handling confidential financial data and the time-sensitive royalty calculation processes. Areas of experience included .NET development, relational databases, message brokers, monitoring and integration platforms, CI/CD, DevOps and Agile methodologies, and on-call engineering support. Getty Images is the global leader in multimedia and royalty services.</p>
-        </article>
-
-        <article class="job">
-            <h3>Software Engineer in Test - iSoftStone Inc.</h3>
-            <div class="job-date">2007 – 2012 | Kirkland, WA</div>
-            <p>I designed and executed automated tests for web, mobile, and desktop software products. I developed unit and integration tests for web applications and APIs using automated frameworks and custom scripting. I wrote test plans, researched, and implemented test automation tools and frameworks. I led offshore and on-site testing teams. iSoftStone is a global IT and business services provider for Fortune 100 technology companies.</p>
-        </article>
-    </section>
-
-    <section class="education section">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Bachelor of Science in Electronics Engineering</strong></li>
-            <li>Universidad del Valle de Guatemala</li>
-        </ul>
-    </section>
-
-    <section class="certifications section">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Azure Security Engineer Associate, Microsoft</li>
-            <li>Solutions Architecture, University of Washington</li>
-            <li>Telecommunications and Networks, America Movil</li>
-        </ul>
-    </section>
+<h1 id="section"></h1>
+<h1 id="alejandro-echeverria"><strong>Alejandro Echeverria</strong></h1>
+<p>Senior Data and AI Solutions Engineer</p>
+<p><a
+href="mailto:nablaservices@outlook.com">nablaservices@outlook.com</a></p>
+<p><a
+href="https://linkedin.com/in/cuete">https://linkedin.com/in/cuete</a></p>
+<p><a href="https://github.com/cuete">https://github.com/cuete</a></p>
+<h2 id="professional-summary">Professional Summary</h2>
+<blockquote>
+<p>A highly skilled Full Stack Senior Software Engineer, I excel in
+architecting data flows and AI-powered solutions. Using deep technical
+knowledge, dynamic project management and communication skills, I
+specialize in delivering scalable, secure, and compliant solutions that
+transform ambiguity and raw data into clear, actionable insights for
+industry leaders and research decision-makers.</p>
+</blockquote>
+<h2 id="technical-skills">Technical Skills</h2>
+<blockquote>
+<p>• Solutions Architecture—designing comprehensive technical solutions,
+overseeing architecture, and driving successful implementation.</p>
+<p>• Proficient in generative and analysis ML and AI tools and
+models.</p>
+<p>• Expert in cloud architecture.</p>
+<p>• Programming language polyglot: C#, Python, JavaScript, R,
+TypeScript, SQL, and PowerShell.</p>
+<p>• Proficient in data structures, algorithms, design patterns, and
+performance principles.</p>
+<p>• Experience with Infrastructure as Code (IaC) using ARM and
+Terraform.</p>
+<p>• CI/CD tools and practices like Azure DevOps, GitHub Actions, and
+Drone.</p>
+<p>• Containerization and orchestration with Docker and Kubernetes.</p>
+<p>• Frameworks expertise includes .NET, Node.js, Entity Framework, and
+Microsoft Fabric.</p>
+<p>• Experience with databases and storage solutions such as SQL, NoSQL,
+Data Lake, Redis, and Blob.</p>
+<p>• Comprehensive understanding of Software Development Lifecycle
+(SDL), including Scrum, Agile, and DevOps.</p>
+<p>• Cloud security and threat modeling expertise, including identity
+and authentication (SAML, OAuth2.0, SSO).</p>
+<p>• Regulation-compliant implementations (GDPR, CCPA, HIPAA).</p>
+<p>• Deep understanding of network protocols (TCP/IP, HTTP) and Zero
+Trust Network security model strategies.</p>
+<p>• Linux systems administration and internals.</p>
+<p>• Skilled in troubleshooting, incident management, escalation, and
+on-call crisis response.</p>
+</blockquote>
+<h2 id="soft-skills">Soft Skills</h2>
+<blockquote>
+<p>• Technical project management: scoping, coordinating workflows,
+budgeting, and tracking deliverables.</p>
+<p>• Industry and research experience.</p>
+<p>• Workflow optimization and KPI-driven project delivery.</p>
+<p>• Data-driven business insights, actionable metric creation from
+large raw data.</p>
+<p>• Collaborative and effective cross-team communication, both
+technical and non-technical.</p>
+<p>• Analysis, attention to detail, and problem-solving.</p>
+<p>• Leadership, initiative, motivation, and accountability.</p>
+<p>• Adaptability and a mindset focused on continuous learning.</p>
+<p>• Security-oriented, with a focus on data privacy and responsible use
+of AI.</p>
+</blockquote>
+<h2 id="professional-experience">Professional Experience</h2>
+<h3
+id="senior-software-engineer-data-and-statistical-modeling-gates-foundation">Senior
+Software Engineer (Data and Statistical Modeling) – Gates
+Foundation</h3>
+<p><em>2025 - Current</em></p>
+<p><em>Seattle, WA</em></p>
+<blockquote>
+<p>At the Institute for Disease Modeling (IDM), I collaborate closely
+with global health researchers to transform complex epidemiology and
+simulation data into effective visualizations. These visual tools enable
+stakeholders to better interpret research findings and support
+data-driven decision-making in the context of infectious disease
+eradication efforts. I lead the prototyping and delivery of AI-driven
+solutions for direct adoption by our partner researchers in leading
+global health institutions and LMICs. I engage in identifying gaps
+within research data and processes, actively seeking collaboration
+opportunities with experts to foster interdisciplinary partnerships,
+evaluate and recommend new technology adoption to maximize the
+Foundation's impact in the Global Health domain.</p>
+</blockquote>
+<h3 id="senior-ai-solutions-consultant-dura-digital">Senior AI Solutions
+Consultant – Dura Digital</h3>
+<p><em>2025</em></p>
+<p><em>Seattle, WA</em></p>
+<blockquote>
+<p>As Senior AI Solutions Consultant, I architected and delivered AI
+solutions for workflow automation in healthcare. I provided clarity to
+complex projects and drove business value by helping organizations adopt
+AI for greater efficiency. Solutions were secure, scalable, and
+compliant, enabling streamlined processes and unlocking new operational
+benefits. Dura Digital is a global IT consulting and services firm
+dedicated to delivering business, data, and AI-driven growth
+solutions.</p>
+</blockquote>
+<h3 id="software-engineer-ii-microsoft">Software Engineer II –
+Microsoft</h3>
+<p><em>2019 – 2025</em></p>
+<p><em>Redmond, WA</em></p>
+<blockquote>
+<p>I was responsible for driving the development of high-impact,
+large-scale enterprise cloud applications from initial business
+requirements to maintenance and support. I utilized Azure cloud
+infrastructure, DevOps practices, CI/CD, AI/ML, and data analytics to
+deliver global, world-class enterprise software products. I conducted
+threat modeling and implemented zero-trust strategies to secure critical
+services and managed incident response for high-priority incidents and
+outages. I delivered global solutions for consumer and enterprise
+customer support, including AI Services, Communication Services, APIs,
+machine learning and intelligent automation, speech recognition and
+analytics, cognitive tools, and metric processing and analysis while
+ensuring security and information privacy.</p>
+</blockquote>
+<h3 id="software-engineer---motiv-inc.-microsoft-contract">Software
+Engineer - Motiv Inc. (Microsoft Contract)</h3>
+<p><em>2017 – 2019</em></p>
+<p><em>Redmond, WA</em></p>
+<blockquote>
+<p>I developed secure, high-throughput, cloud applications at
+Microsoft's Core Platform Engineering Group. I developed APIs and
+microservices, identified and mitigated software vulnerabilities,
+enforced data privacy requirements, security, and compliance,
+implemented DevOps processes, and hardened resources and applications to
+meet world-class industry standards.</p>
+</blockquote>
+<h3 id="software-engineer---getty-images">Software Engineer - Getty
+Images</h3>
+<p><em>2012 – 2017</em></p>
+<p><em>Seattle, WA</em></p>
+<blockquote>
+<p>I developed and tested web services and databases handling
+confidential financial data and the time-sensitive royalty calculation
+processes. Areas of experience included .NET development, relational
+databases, message brokers, monitoring and integration platforms, CI/CD,
+DevOps and Agile methodologies, and on-call engineering support. Getty
+Images is the global leader in multimedia and royalty services.</p>
+</blockquote>
+<h3 id="software-engineer-in-test---isoftstone-inc.">Software Engineer
+in Test - iSoftStone Inc.</h3>
+<p><em>2007 – 2012</em></p>
+<p><em>Kirkland, WA</em></p>
+<blockquote>
+<p>I designed and executed automated tests for web, mobile, and desktop
+software products. I developed unit and integration tests for web
+applications and APIs using automated frameworks and custom scripting. I
+wrote test plans, researched, and implemented test automation tools and
+frameworks. I led offshore and on-site testing teams. iSoftStone is a
+global IT and business services provider for Fortune 100 technology
+companies.</p>
+</blockquote>
+<h2 id="education">Education</h2>
+<h3 id="bachelor-of-science-in-electronics-engineering">Bachelor of
+Science in Electronics Engineering</h3>
+<p>Universidad del Valle de Guatemala</p>
+<h2 id="certifications">Certifications</h2>
+<ul>
+<li><p>Agile Project Management, Google</p></li>
+<li><p>Azure Security Engineer Associate, Microsoft</p></li>
+<li><p>Solutions Architecture, University of Washington</p></li>
+<li><p>Telecommunications and Networks, America Movil</p></li>
+</ul>
 </body>
 </html>

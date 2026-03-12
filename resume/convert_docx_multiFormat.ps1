@@ -59,7 +59,7 @@ Write-Host "Converting to PDF..." -ForegroundColor Yellow
 
 if ($IsWindows -or $PSVersionTable.PSVersion.Major -lt 6) {
     # Try Word COM first on Windows
-    $wordSuccess = Convert-WithWord -Source $inputPath -Destination $pdfPath -Format 17
+    $wordSuccess = Convert-WithWord -Source $inputPath.ToString() -Destination $pdfPath.ToString() -Format 17
 
     if (-not $wordSuccess) {
         Write-Host "Trying pandoc for PDF conversion..." -ForegroundColor Yellow
