@@ -102,18 +102,8 @@ if ($LASTEXITCODE -eq 0) {
     Write-Warning "Markdown conversion failed."
 }
 
-# Convert to Plain Text
-$txtPath = Join-Path $directory "$baseName.txt"
-Write-Host "Converting to Plain Text..." -ForegroundColor Yellow
-& pandoc "$inputPath" -o "$txtPath" --wrap=none 2>&1
-if ($LASTEXITCODE -eq 0) {
-    Write-Host "Plain text created: $txtPath" -ForegroundColor Green
-} else {
-    Write-Warning "Plain text conversion failed."
-}
-
 Write-Host "`nConversion complete!" -ForegroundColor Cyan
 Write-Host "Output files:" -ForegroundColor Cyan
-Get-ChildItem -Path $directory -Filter "$baseName.*" | Where-Object { $_.Extension -in @('.pdf', '.html', '.md', '.txt') } | ForEach-Object {
+Get-ChildItem -Path $directory -Filter "$baseName.*" | Where-Object { $_.Extension -in @('.pdf', '.html', '.md') } | ForEach-Object {
     Write-Host "  - $($_.FullName)" -ForegroundColor Gray
 }
