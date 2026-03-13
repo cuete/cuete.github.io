@@ -18,17 +18,17 @@ Senior Data and AI Solutions Engineer
 
 > • Solutions Architecture---designing comprehensive technical solutions, overseeing architecture, and driving successful implementation.
 >
-> • Proficient in generative and analysis ML and AI tools and models.
+> • Proficient in generative and analysis ML and AI tools, models, and design patterns.
 >
-> • Expert in cloud architecture.
+> • CI/CD tools and practices like Azure DevOps, GitHub Actions, and Drone.
+>
+> • Experience with Infrastructure as Code (IaC) using ARM and Terraform.
+>
+> • Data pipeline technology stack experience---Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB.
 >
 > • Programming language polyglot: C#, Python, JavaScript, R, TypeScript, SQL, and PowerShell.
 >
 > • Proficient in data structures, algorithms, design patterns, and performance principles.
->
-> • Experience with Infrastructure as Code (IaC) using ARM and Terraform.
->
-> • CI/CD tools and practices like Azure DevOps, GitHub Actions, and Drone.
 >
 > • Containerization and orchestration with Docker and Kubernetes.
 >
