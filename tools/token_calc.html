@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Token Budget Explorer</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f1efe8;
+    --color-background-tertiary: #e8e6df;
+    --color-text-primary: #1a1a18;
+    --color-text-secondary: #5f5e5a;
+    --color-text-tertiary: #888780;
+    --color-border-tertiary: rgba(0,0,0,0.12);
+    --color-border-secondary: rgba(0,0,0,0.22);
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --font-sans: system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background-primary: #1e1e1c;
+      --color-background-secondary: #2a2a27;
+      --color-background-tertiary: #333330;
+      --color-text-primary: #e8e6df;
+      --color-text-secondary: #b4b2a9;
+      --color-text-tertiary: #888780;
+      --color-border-tertiary: rgba(255,255,255,0.1);
+      --color-border-secondary: rgba(255,255,255,0.18);
+    }
+  }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-background-primary);
+    color: var(--color-text-primary);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  h1 { font-size: 18px; font-weight: 500; margin-bottom: 1.5rem; }
+  .tok-section { margin-bottom: 1.5rem; }
+  .tok-label { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 6px; display: flex; justify-content: space-between; }
+  .tok-name { font-weight: 500; color: var(--color-text-primary); }
+  .tok-bar-wrap { height: 10px; background: var(--color-background-secondary); border-radius: 5px; overflow: hidden; margin-bottom: 4px; }
+  .tok-bar { height: 100%; border-radius: 5px; transition: width 0.2s; }
+  .metrics { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin-bottom: 1.5rem; }
+  .metric { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px; }
+  .metric-label { font-size: 11px; color: var(--color-text-secondary); margin-bottom: 4px; }
+  .metric-value { font-size: 20px; font-weight: 500; color: var(--color-text-primary); }
+  .metric-sub { font-size: 11px; color: var(--color-text-tertiary); margin-top: 2px; }
+  .window-viz { display: flex; height: 28px; border-radius: var(--border-radius-md); overflow: hidden; margin-bottom: 6px; border: 0.5px solid var(--color-border-tertiary); }
+  .window-seg { transition: flex 0.2s; display: flex; align-items: center; justify-content: center; font-size: 10px; overflow: hidden; white-space: nowrap; }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.5rem; }
+  .leg-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--color-text-secondary); }
+  .leg-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+  .slider-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .slider-row label { font-size: 13px; color: var(--color-text-secondary); min-width: 160px; }
+  .slider-row input[type=range] { flex: 1; accent-color: #534AB7; }
+  .slider-row span { font-size: 13px; font-weight: 500; min-width: 60px; text-align: right; color: var(--color-text-primary); }
+  .cost-table { width: 100%; font-size: 13px; border-collapse: collapse; }
+  .cost-table td { padding: 6px 8px; }
+  .cost-table tr:not(:last-child) td { border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .cost-table .total td { font-weight: 500; }
+  .section-head { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-tertiary); margin-bottom: 10px; margin-top: 1.5rem; }
+</style>
+</head>
+<body>
+<h1>Token budget explorer — Azure AI Foundry</h1>
+
+<div class="metrics" id="metrics"></div>
+<div class="window-viz" id="winviz"></div>
+<div class="legend" id="legend"></div>
+
+<div class="section-head">Token types — adjust per call</div>
+<div id="sliders"></div>
+
+<div class="section-head">Daily cost estimate</div>
+<table class="cost-table" id="costtable"></table>
+
+<script>
+const COLORS = {
+  system:    '#534AB7',
+  history:   '#1D9E75',
+  rag:       '#378ADD',
+  user:      '#D85A30',
+  output:    '#BA7517',
+  cache_in:  '#888780',
+};
+
+const TYPES = [
+  { id:'system',   label:'System prompt',        desc:'Instructions, persona, tools schema',  def:800,  min:100,  max:4000,  step:100, price_in:3.0,  price_out:0   },
+  { id:'history',  label:'Conversation history', desc:'Prior turns kept in context',          def:1500, min:0,    max:16000, step:500, price_in:3.0,  price_out:0   },
+  { id:'rag',      label:'RAG / grounding',      desc:'Retrieved chunks injected per call',   def:2000, min:0,    max:12000, step:500, price_in:3.0,  price_out:0   },
+  { id:'user',     label:'User message',         desc:'Current user turn',                    def:300,  min:50,   max:2000,  step:50,  price_in:3.0,  price_out:0   },
+  { id:'output',   label:'Model output',         desc:'Generated completion tokens',          def:600,  min:50,   max:4000,  step:50,  price_in:0,    price_out:15.0},
+  { id:'cache_in', label:'Cached prompt (in)',   desc:'Prompt cache read (50% discount)',     def:600,  min:0,    max:8000,  step:200, price_in:1.5,  price_out:0   },
+];
+
+const MODEL_CONTEXT = 128000;
+let vals = {};
+TYPES.forEach(t => vals[t.id] = t.def);
+let callsPerDay = 500;
+
+function totalInput() { return TYPES.filter(t=>t.id!=='output').reduce((s,t)=>s+vals[t.id],0); }
+function totalTokens() { return totalInput() + vals['output']; }
+function dailyCost() {
+  let cost = 0;
+  TYPES.forEach(t => { cost += (vals[t.id]/1e6)*(t.price_out>0?t.price_out:t.price_in); });
+  return cost * callsPerDay;
+}
+
+function render() {
+  const inp = totalInput();
+  const tot = totalTokens();
+  const ctxUsed = Math.min(tot, MODEL_CONTEXT);
+  const cost = dailyCost();
+
+  document.getElementById('metrics').innerHTML = `
+    <div class="metric"><div class="metric-label">Input tokens/call</div><div class="metric-value">${inp.toLocaleString()}</div><div class="metric-sub">excl. output</div></div>
+    <div class="metric"><div class="metric-label">Output tokens/call</div><div class="metric-value">${vals['output'].toLocaleString()}</div><div class="metric-sub">completion</div></div>
+    <div class="metric"><div class="metric-label">Context used</div><div class="metric-value">${((ctxUsed/MODEL_CONTEXT)*100).toFixed(1)}%</div><div class="metric-sub">of 128K window</div></div>
+    <div class="metric"><div class="metric-label">Est. daily cost</div><div class="metric-value">$${cost.toFixed(2)}</div><div class="metric-sub">${callsPerDay.toLocaleString()} calls/day</div></div>
+  `;
+
+  const segs = TYPES.map(t => {
+    const f = vals[t.id]/MODEL_CONTEXT;
+    return `<div class="window-seg" style="flex:${f};background:${COLORS[t.id]}"></div>`;
+  }).join('');
+  const remF = Math.max(0, (MODEL_CONTEXT-ctxUsed)/MODEL_CONTEXT);
+  document.getElementById('winviz').innerHTML = segs +
+    `<div class="window-seg" style="flex:${remF};background:var(--color-background-secondary)"></div>`;
+
+  document.getElementById('legend').innerHTML = TYPES.map(t =>
+    `<div class="leg-item"><div class="leg-dot" style="background:${COLORS[t.id]}"></div>${t.label}</div>`
+  ).join('') + `<div class="leg-item"><div class="leg-dot" style="background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary)"></div>Unused window</div>`;
+
+  const costRows = TYPES.map(t => {
+    const price = t.price_out>0?t.price_out:t.price_in;
+    const dayTotal = (vals[t.id]/1e6)*price*callsPerDay;
+    return `<tr><td style="color:var(--color-text-secondary)">${t.label}</td>
+      <td style="text-align:right">${vals[t.id].toLocaleString()} tok</td>
+      <td style="text-align:right;color:var(--color-text-secondary)">$${price.toFixed(2)}/1M</td>
+      <td style="text-align:right">$${dayTotal.toFixed(2)}/day</td></tr>`;
+  }).join('');
+  document.getElementById('costtable').innerHTML = costRows +
+    `<tr class="total"><td>Total</td><td></td><td></td><td style="text-align:right">$${cost.toFixed(2)}/day</td></tr>`;
+}
+
+const slidersEl = document.getElementById('sliders');
+TYPES.forEach(t => {
+  const row = document.createElement('div');
+  row.className = 'slider-row';
+  row.innerHTML = `<label title="${t.desc}">${t.label}</label>
+    <input type="range" min="${t.min}" max="${t.max}" step="${t.step}" value="${t.def}" id="sl_${t.id}">
+    <span id="sv_${t.id}">${t.def.toLocaleString()}</span>`;
+  slidersEl.appendChild(row);
+  row.querySelector('input').addEventListener('input', e => {
+    vals[t.id] = +e.target.value;
+    document.getElementById('sv_'+t.id).textContent = vals[t.id].toLocaleString();
+    render();
+  });
+});
+
+const callsRow = document.createElement('div');
+callsRow.className = 'slider-row';
+callsRow.innerHTML = `<label>Calls per day</label>
+  <input type="range" min="10" max="50000" step="10" value="500" id="sl_calls">
+  <span id="sv_calls">500</span>`;
+slidersEl.appendChild(callsRow);
+callsRow.querySelector('input').addEventListener('input', e => {
+  callsPerDay = +e.target.value;
+  document.getElementById('sv_calls').textContent = callsPerDay.toLocaleString();
+  render();
+});
+
+render();
+</script>
+</body>
+</html>
