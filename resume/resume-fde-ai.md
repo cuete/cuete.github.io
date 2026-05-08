@@ -1,0 +1,105 @@
+# 
+
+# **Alejandro Echeverria**
+
+Forward Deployed AI Engineer
+
+<nablaservices@outlook.com>
+
+<https://linkedin.com/in/cuete>
+
+<https://github.com/cuete>
+
+## Professional Summary
+
+A Senior Software Engineer specializing in deploying AI solutions directly with customers and research partners. I embed with domain experts to translate complex, ambiguous problems into production-grade AI systems---rapidly iterating from prototype to adoption. I bridge technical and non-technical teams, turning real-world pain points into scalable, secure, and compliant AI-powered tools. My work spans global health research, healthcare, and enterprise environments.
+
+## Technical Skills
+
+**AI & ML:** Generative and analytical ML/AI, LLMs, AI agents, multi-agent systems, intelligent automation, design patterns; prompt engineering, prompt optimization, and token cost management (FinOps for AI); model selection and right-sizing strategies; Retrieval-Augmented Generation (RAG); latency optimization and performance benchmarking; model evaluation and A/B testing; Azure OpenAI; AI guardrails and Responsible AI practices.
+
+**Scalability & Performance:** Distributed AI pipeline design; horizontal scaling with Kubernetes; streaming AI workloads (Event Hub); async/parallel pipeline architecture; caching strategies for AI services; Azure AI cost monitoring and budget governance.
+
+**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, Data Lake, Redis, Blob.
+
+**Languages:** Python, C#, JavaScript, TypeScript, R, SQL, PowerShell.
+
+**Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform (IaC).
+
+**Architecture & Frameworks:** Solutions Architecture; .NET, Node.js, Entity Framework; TCP/IP, HTTP, Zero Trust Network; SDL, Scrum, Agile, DevOps.
+
+**Security & Compliance:** Threat modeling, SAML, OAuth2.0, SSO; GDPR, CCPA, HIPAA; Linux systems administration and internals.
+
+## Soft Skills
+
+**Customer & Delivery:** Translating ambiguous customer and research needs into working technical solutions; fast iteration in customer-facing environments; cross-team communication with both technical and non-technical stakeholders; technical project management.
+
+**Analysis & Insight:** Data-driven business insights; actionable metric creation from large raw data; attention to detail and problem-solving.
+
+**Professional:** Leadership, initiative, motivation, and accountability; security-oriented, with a focus on data privacy and responsible use of AI; adaptability and continuous learning mindset.
+
+## Professional Experience
+
+### Senior Software Engineer (Data and AI) -- Gates Foundation
+
+*2025 - Current*
+
+*Seattle, WA*
+
+Embedded with global health researchers at the Institute for Disease Modeling (IDM), I work directly with domain experts to translate complex epidemiology and simulation data requirements into production AI-driven solutions. I lead rapid prototyping and delivery of AI tools adopted by partner researchers at leading global health institutions and LMICs---iterating closely with users from concept to deployment. I identify gaps in research data and processes, seek collaboration with domain experts to bridge technical and scientific knowledge, and evaluate and recommend new technologies to maximize the Foundation's impact.
+
+### Senior AI Solutions Consultant -- Dura Digital
+
+*2025*
+
+*Seattle, WA*
+
+Deployed directly with healthcare clients to architect and deliver AI solutions for workflow automation. I provided technical clarity on complex projects, drove rapid AI adoption across organizations, and owned end-to-end delivery of secure, scalable, and regulation-compliant solutions. Dura Digital is a global IT consulting and services firm dedicated to delivering business, data, and AI-driven growth solutions.
+
+### Software Engineer II -- Microsoft
+
+*2019 -- 2025*
+
+*Redmond, WA*
+
+I drove development of high-impact enterprise AI products from business requirements to production, including AI Services, intelligent automation, speech recognition and analytics, and cognitive tools serving global users. I integrated AI/ML capabilities into cloud-native applications, conducted threat modeling, implemented zero-trust security, and managed incident response for high-priority production outages.
+
+### Software Engineer - Motiv Inc. (Microsoft Contract)
+
+*2017 -- 2019*
+
+*Redmond, WA*
+
+I developed secure, high-throughput cloud applications at Microsoft's Core Platform Engineering Group. I built APIs and microservices, identified and mitigated software vulnerabilities, enforced data privacy requirements, and implemented DevOps processes to meet enterprise-grade security and compliance standards.
+
+### Software Engineer - Getty Images
+
+*2012 -- 2017*
+
+*Seattle, WA*
+
+I developed and tested web services and databases handling confidential financial data and time-sensitive royalty calculation processes. Areas of experience included .NET development, relational databases, message brokers, monitoring and integration platforms, CI/CD, DevOps and Agile methodologies, and on-call engineering support. Getty Images is the global leader in multimedia and royalty services.
+
+### Software Engineer in Test - iSoftStone Inc.
+
+*2007 -- 2012*
+
+*Kirkland, WA*
+
+I designed and executed automated tests for web, mobile, and desktop software products. I developed unit and integration tests for web applications and APIs using automated frameworks and custom scripting. I led offshore and on-site testing teams for Fortune 100 technology clients.
+
+## Education
+
+### Bachelor of Science in Electronics Engineering
+
+Universidad del Valle de Guatemala
+
+## Certifications
+
+- Agile Project Management, Google
+
+- Azure Security Engineer Associate, Microsoft
+
+- Solutions Architecture, University of Washington
+
+- Telecommunications and Networks, America Movil
