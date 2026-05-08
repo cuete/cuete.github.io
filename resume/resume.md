@@ -54,7 +54,7 @@ At the Institute for Disease Modeling (IDM), I collaborate closely with global h
 
 *Seattle, WA*
 
-As Senior AI Solutions Consultant, I architected and delivered AI solutions for enterprise clients. I provided architectural guidance for a regulated Azure AI Foundry deployment at a major Canadian financial institution (Central 1 Credit Union), including multi-region design across US East 2 and Canada Central/East regions to meet PIPEDA and BCFSA data sovereignty requirements. Work included governance controls, zero-trust security, private networking, MuleSoft Flex Gateway integration for Claude model access, and compliance-grade observability. Dura Digital is a global IT consulting and services firm dedicated to delivering business, data, and AI-driven growth solutions.
+As Senior AI Solutions Consultant, I architected and delivered AI solutions for enterprise clients. I provided architectural guidance for a regulated Azure AI Foundry deployment at a major Canadian financial institution, including multi-region design across US East 2 and Canada Central/East regions to meet PIPEDA and BCFSA data sovereignty requirements. Work included governance controls, zero-trust security, private networking, MuleSoft Flex Gateway integration for Claude model access, and compliance-grade observability. Dura Digital is a global IT consulting and services firm dedicated to delivering business, data, and AI-driven growth solutions.
 
 ### Software Engineer II -- Microsoft
 

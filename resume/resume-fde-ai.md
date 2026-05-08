@@ -54,7 +54,7 @@ Embedded with global health researchers at the Institute for Disease Modeling (I
 
 *Seattle, WA*
 
-Embedded with enterprise clients to provide architectural guidance and deliver AI solutions. I led the end-to-end architecture for a regulated Azure AI Foundry deployment at Central 1 Credit Union (BC, Canada) --- translating complex regulatory requirements (PIPEDA, BCFSA data sovereignty) into a concrete multi-region technical design, identifying critical gaps in the existing implementation roadmap, and providing effort estimates across 13 interdependent tasks. Work spanned governance, zero-trust security, private networking, MuleSoft Flex Gateway integration for Claude model routing, and compliance observability. Dura Digital is a global IT consulting and services firm dedicated to delivering business, data, and AI-driven growth solutions.
+Embedded with enterprise clients to provide architectural guidance and deliver AI solutions. I led the end-to-end architecture for a regulated Azure AI Foundry deployment at a major Canadian financial institution --- translating complex regulatory requirements (PIPEDA, BCFSA data sovereignty) into a concrete multi-region technical design, identifying critical gaps in the existing implementation roadmap, and providing effort estimates across 13 interdependent tasks. Work spanned governance, zero-trust security, private networking, MuleSoft Flex Gateway integration for Claude model routing, and compliance observability. Dura Digital is a global IT consulting and services firm dedicated to delivering business, data, and AI-driven growth solutions.
 
 ### Software Engineer II -- Microsoft
 
