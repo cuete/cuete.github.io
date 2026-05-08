@@ -46,7 +46,7 @@ A highly skilled Full Stack Senior Software Engineer, I excel in architecting da
 
 *Seattle, WA*
 
-At the Institute for Disease Modeling (IDM), I collaborate closely with global health researchers to transform complex epidemiology and simulation data into effective visualizations. These visual tools enable stakeholders to better interpret research findings and support data-driven decision-making in the context of infectious disease eradication efforts. I lead the prototyping and delivery of AI-driven solutions for direct adoption by our partner researchers in leading global health institutions and LMICs. I engage in identifying gaps within research data and processes, actively seeking collaboration opportunities with experts to foster interdisciplinary partnerships, evaluate and recommend new technology adoption to maximize the Foundation\'s impact in the Global Health domain.
+At the Institute for Disease Modeling (IDM), I design and deliver AI and data solutions that power global health research. I architect data pipelines and AI-driven tools that transform complex epidemiology and simulation data into actionable visualizations and decision-support systems, enabling researchers and stakeholders to interpret findings and drive data-informed decisions in infectious disease eradication. I lead rapid prototyping and production delivery of AI solutions adopted by partner institutions in LMICs, identify gaps in research data and processes, and evaluate and recommend emerging AI technologies to maximize the Foundation\'s impact in Global Health.
 
 ### Senior AI Solutions Consultant -- Dura Digital
 
