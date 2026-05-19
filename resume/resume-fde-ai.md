@@ -46,7 +46,11 @@ A Senior Software Engineer specializing in deploying AI solutions directly with 
 
 *Seattle, WA*
 
-Embedded with global health researchers at the Institute for Disease Modeling (IDM), I translate complex domain requirements into production AI and data systems. I architect pipelines that process epidemiology and simulation data into AI-driven decision-support tools and visualizations, deployed directly by researchers at leading global health institutions and LMICs. I iterate closely with users from concept to production, identify gaps in research data infrastructure, bridge technical and scientific knowledge across teams, and evaluate and recommend new AI technologies to maximize the Foundation's impact.
+At the Institute for Disease Modeling (IDM), I design and deploy AI-powered systems that accelerate global health research. I architect end-to-end AI pipelines — from epidemiology and simulation data to interactive visualizations and decision-support tools — used by researchers and stakeholders to drive data-informed decisions in infectious disease eradication.
+
+I integrate AI capabilities into research workflows with a focus on production readiness: data quality, privacy controls, prompt engineering, and evaluation pipelines engineered for direct adoption by partner institutions and LMICs. I lead rapid prototyping and delivery of AI solutions, applying DevSecOps practices (automation, CI/CD, security reviews) to ensure reliability and scale.
+
+I drive technical planning and cross-functional alignment across research, engineering, and operations — recommending AI tooling and platform choices, contributing to shared frameworks, and translating complex research requirements into production-grade systems with measurable impact.
 
 ### Senior AI Solutions Consultant -- Dura Digital
 

@@ -12,7 +12,7 @@ Senior AI Engineer
 
 ## Professional Summary
 
-A Senior AI Engineer with deep expertise in designing, building, and deploying AI-powered systems at scale. I architect end-to-end AI solutions---from data pipelines and model integration to production deployment and compliance---across cloud-native environments. I specialize in translating complex research and business requirements into secure, scalable AI products that drive measurable impact in global health, enterprise, and healthcare domains.
+Senior AI Engineer with 10+ years in AI and 18+ years in software engineering. I design and deploy production-ready agentic AI — multi-agent workflows, RAG architectures, and LLM-powered automation on Azure (OpenAI, Foundry, AI Search) — translating complex research and business requirements into measurable impact. I deliver end-to-end: from data pipelines and model integration to responsible AI, compliance, and operational excellence across global health, enterprise, and regulated domains.
 
 ## Technical Skills
 
@@ -46,7 +46,11 @@ A Senior AI Engineer with deep expertise in designing, building, and deploying A
 
 *Seattle, WA*
 
-At the Institute for Disease Modeling (IDM), I design, build, and deploy AI and data systems that accelerate global health research. I architect end-to-end AI pipelines---from raw epidemiology and simulation data to interactive visualizations and decision-support tools---used by researchers and stakeholders to drive data-informed decisions in infectious disease eradication. I lead rapid prototyping and production delivery of AI solutions adopted by partner institutions and LMICs, identify gaps in research data infrastructure, and evaluate and recommend emerging AI technologies to maximize the Foundation's impact in Global Health.
+At the Institute for Disease Modeling (IDM), I design and deploy AI-powered systems that accelerate global health research. I architect end-to-end AI pipelines — from epidemiology and simulation data to interactive visualizations and decision-support tools — used by researchers and stakeholders to drive data-informed decisions in infectious disease eradication.
+
+I integrate AI capabilities into research workflows with a focus on production readiness: data quality, privacy controls, prompt engineering, and evaluation pipelines engineered for direct adoption by partner institutions and LMICs. I lead rapid prototyping and delivery of AI solutions, applying DevSecOps practices (automation, CI/CD, security reviews) to ensure reliability and scale.
+
+I drive technical planning and cross-functional alignment across research, engineering, and operations — recommending AI tooling and platform choices, contributing to shared frameworks, and translating complex research requirements into production-grade systems with measurable impact.
 
 ### Senior AI Solutions Consultant -- Dura Digital
 
