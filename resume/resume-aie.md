@@ -2,7 +2,7 @@
 
 # **Alejandro Echeverria**
 
-Senior AI Engineer
+Senior AI and Data Engineer
 
 <nablaservices@outlook.com>
 
@@ -40,7 +40,7 @@ Senior AI Engineer with 10+ years in AI and 18+ years in software engineering. I
 
 ## Professional Experience
 
-### Senior Software Engineer (Data and AI) -- Gates Foundation
+### Senior Software Engineer (Data and Statistical Modeling) -- Gates Foundation
 
 *2025 - Current*
 

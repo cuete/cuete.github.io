@@ -40,7 +40,7 @@ A Senior Software Engineer specializing in deploying AI solutions directly with 
 
 ## Professional Experience
 
-### Senior Software Engineer (Data and AI) -- Gates Foundation
+### Senior Software Engineer (Data and Statistical Modeling) -- Gates Foundation
 
 *2025 - Current*
 
