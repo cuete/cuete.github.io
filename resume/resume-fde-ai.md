@@ -58,7 +58,7 @@ I drive technical planning and cross-functional alignment across research, engin
 
 *Seattle, WA*
 
-Embedded with enterprise clients to provide architectural guidance and deliver AI solutions. I led the end-to-end architecture for a regulated Azure AI Foundry deployment at a major Canadian financial institution --- translating complex regulatory requirements (PIPEDA, BCFSA data sovereignty) into a concrete multi-region technical design, identifying critical gaps in the existing implementation roadmap, and providing effort estimates across 13 interdependent tasks. Work spanned governance, zero-trust security, private networking, MuleSoft Flex Gateway integration for Claude model routing, and compliance observability. Dura Digital is a global IT consulting and services firm dedicated to delivering business, data, and AI-driven growth solutions.
+As Senior AI Solutions Consultant, I architected and delivered AI solutions for workflow automation in healthcare and finance. I provided clarity to complex projects and drove business value by helping organizations adopt AI for greater efficiency. Solutions were secure, scalable, and compliant, enabling streamlined processes and unlocking new operational benefits. Dura Digital is a global IT consulting and services firm dedicated to delivering business, data, and AI-driven growth solutions.
 
 ### Software Engineer II -- Microsoft
 
