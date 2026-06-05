@@ -1,0 +1,225 @@
+/* resume.css — Alejandro Echeverría resume stylesheet
+ * Works with: standalone HTML, pandoc --embed-resources, wkhtmltopdf PDF
+ * Font spec: Calibri / Calibri Light / Segoe UI / Arial
+ * Color spec: body #272727, headings/accents #538135, subtitle #595959, links #0563C1
+ */
+
+/* ── Reset & Base ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12pt;
+}
+
+body {
+  font-family: "Calibri", "Calibri Light", "Segoe UI", Arial, sans-serif;
+  font-size: 12pt;
+  color: #272727;
+  line-height: 1.4;
+  background: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.27cm; /* 0.5 inch all sides — matches PDF page margins & DOCX */
+}
+
+/* ── Header (name left, contact right) ───────────────────────────────────── */
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5em;
+  margin-bottom: 0.4em;
+}
+.resume-header h1 {
+  margin-bottom: 0.1em;
+}
+.rh-title {
+  color: #595959;
+  font-size: 12pt;
+}
+.rh-contact {
+  text-align: right;
+  font-size: 11pt;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/* ── Headings ─────────────────────────────────────────────────────────────── */
+
+/* H1: Name */
+h1 {
+  font-family: "Calibri", "Calibri Light", "Segoe UI", Arial, sans-serif;
+  font-size: 28pt;
+  font-weight: 700;
+  color: #272727;
+  line-height: 1.2;
+  margin-bottom: 0.2em;
+}
+
+/* H2: Section headers (Professional Summary, Experience, Education…) */
+h2 {
+  font-family: "Calibri", "Calibri Light", "Segoe UI", Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #538135;
+  border-bottom: 1.5px solid #538135;
+  padding-bottom: 2px;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+/* H3: Job titles */
+h3 {
+  font-family: "Calibri", "Calibri Light", "Segoe UI", Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  color: #538135;
+  border: none;
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+h4, h5, h6 {
+  font-size: 12pt;
+  font-weight: 600;
+  color: #272727;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+/* ── Paragraphs ──────────────────────────────────────────────────────────── */
+p {
+  font-size: 12pt;
+  color: #272727;
+  margin-bottom: 0.4em;
+}
+
+/* ── Links ───────────────────────────────────────────────────────────────── */
+a {
+  color: #0563C1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Bold inline labels (e.g. **AI & ML:**) ──────────────────────────────── */
+strong, b {
+  color: #538135;
+  font-weight: 700;
+}
+
+/* ── Lists ───────────────────────────────────────────────────────────────── */
+ul, ol {
+  margin: 0 0 0.4em 1.4em;
+  padding: 0;
+}
+
+li {
+  font-size: 12pt;
+  color: #272727;
+  margin-bottom: 0.1em;
+  line-height: 1.4;
+}
+
+/* Compact nested lists */
+li > ul,
+li > ol {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+/* ── Horizontal Rule ─────────────────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 0.8em 0;
+}
+
+/* ── Tables ──────────────────────────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 0.4em;
+  font-size: 12pt;
+}
+
+th {
+  font-weight: 700;
+  color: #538135;
+  border-bottom: 1.5px solid #538135;
+  padding: 2px 6px;
+  text-align: left;
+}
+
+td {
+  padding: 2px 6px;
+  vertical-align: top;
+}
+
+/* ── Code / Pre ──────────────────────────────────────────────────────────── */
+code, pre {
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 10pt;
+  background: #f4f4f4;
+  color: #272727;
+  border-radius: 2px;
+  padding: 1px 3px;
+}
+
+pre {
+  padding: 6px 10px;
+  overflow-x: auto;
+}
+
+/* ── Print / PDF ─────────────────────────────────────────────────────────── */
+@media print {
+  /* Use exact page margins — wkhtmltopdf respects these */
+  @page {
+    margin: 1.27cm; /* 0.5 inch all sides */
+  }
+
+  body {
+    max-width: 100%;
+    padding: 0; /* margins handled by @page */
+    background: #ffffff !important;
+    color: #272727 !important;
+    font-size: 12pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Prevent section headings from appearing alone at page bottom */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Keep job entries together when possible */
+  h3 {
+    page-break-before: auto;
+    break-before: auto;
+  }
+
+  /* Avoid orphaned list items */
+  li {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* No link underlines in print */
+  a {
+    text-decoration: none;
+    color: #0563C1;
+  }
+
+  /* No background colors in print */
+  code, pre {
+    background: none;
+  }
+}
