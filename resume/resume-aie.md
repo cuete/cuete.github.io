@@ -14,17 +14,13 @@ Senior AI Engineer with 10+ years in AI and 18+ years in software engineering. I
 
 ## Technical Skills
 
-**AI & ML:** Generative and analytical ML/AI, LLMs, AI agents, multi-agent systems, intelligent automation, design patterns; prompt engineering, prompt and context optimization, and token cost management (FinOps for AI); model selection and right-sizing strategies; Retrieval-Augmented Generation (RAG); latency optimization and performance benchmarking; model evaluation and A/B testing; Azure OpenAI; AI guardrails and Responsible AI practices.
-
-**Scalability & Performance:** Distributed AI pipeline design; horizontal scaling with Kubernetes; streaming AI workloads (Event Hub); async/parallel pipeline architecture; caching strategies for AI services; Azure AI cost monitoring and budget governance.
+**AI & ML:** LLMs, AI agents, multi-agent systems, RAG, intelligent automation; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; AI guardrails and Responsible AI practices.
 
 **Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, Data Lake, Redis, Blob, Azure Container Apps.
 
 **Languages:** Python, C#, JavaScript, TypeScript, R, SQL, PowerShell.
 
-**Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform (IaC).
-
-**AI Tooling & SDKs:** LangChain, LangGraph, Azure AI Foundry, GitHub Copilot; OpenAI SDK, Anthropic Claude SDK; local LLMs for prototyping and fast implementation; Databricks; FastAPI for AI service APIs; pgvector, sqlite-vec for vector search; Bicep (IaC).
+**Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI; pgvector, sqlite-vec; async/parallel pipeline architecture; caching strategies for AI services; GitHub Copilot.
 
 **Architecture & Frameworks:** Solutions Architecture; .NET, Node.js, Entity Framework; TCP/IP, HTTP, Zero Trust Network; SDL, Scrum, Agile, DevOps.
 

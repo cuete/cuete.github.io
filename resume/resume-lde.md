@@ -14,33 +14,25 @@ Senior Data and AI Solutions Engineer
 
 ## Technical Skills
 
+> • AI & ML: LLMs, AI agents, multi-agent systems, RAG, intelligent automation; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; AI guardrails and Responsible AI practices.
+>
 > • Data platform architecture: Lakehouse/warehouse patterns, secure multi-tenant design, performance and cost trade-offs.
 >
 > • Data engineering: ELT/ETL frameworks, data modeling, batch/stream processing, and API-based integrations.
 >
-> • DevSecOps for data: CI/CD with Azure DevOps, Drone, and GitHub Actions; strong version control and release management practices.
->
-> • Infrastructure as Code: Terraform and ARM; automation for repeatable, auditable cloud deployments.
->
 > • Azure data platform: Azure Data Factory, Synapse Analytics, Data Lake Storage, Event Hubs, Cosmos DB; Microsoft Fabric.
 >
-> • AI developer tooling: Microsoft Foundry, Copilot Studio, Claude Code, GitHub Copilot; OpenAI SDK, Anthropic Claude SDK; LangChain, LangGraph; local LLMs for prototyping; Databricks; RAG architectures; prompt, context, and token optimization.
+> • Infrastructure & DevOps: Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI; pgvector, sqlite-vec; GitHub Copilot.
 >
 > • Languages: Python, SQL, C#, R, TypeScript/JavaScript, PowerShell.
 >
+> • Architecture: Solutions Architecture; .NET, Node.js, Entity Framework; async/parallel pipeline design; caching strategies.
+>
+> • Security & Compliance: threat modeling, SAML, OAuth2.0, SSO; GDPR, CCPA, HIPAA; zero-trust-aligned design.
+>
 > • Data quality & governance: validation strategies, privacy-by-design, and security controls for sensitive data.
 >
-> • Containers & orchestration: Docker, Kubernetes.
->
-> • Application engineering: .NET, Node.js, and FastAPI design for data products and integrations.
->
-> • Data stores: relational SQL, NoSQL, blob/object storage, caches; lake storage patterns.
->
 > • Operational excellence: troubleshooting, incident management, on-call support, and reliability improvements.
->
-> • Security: identity/auth (SAML, OAuth2.0, SSO), threat modeling, and zero-trust-aligned design.
->
-> • Compliance-minded delivery: privacy and regulatory requirements (e.g., GDPR, CCPA, HIPAA) where applicable.
 
 ## Soft Skills
 
