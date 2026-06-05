@@ -69,56 +69,6 @@ h4, h5, h6 {
   margin-bottom: 0.2em;
 }
 
-/* ── Header layout: name+title LEFT, contact info RIGHT ─────────────────── */
-/* pandoc emits: h1 (name), p×4 (title, email, linkedin, github) then h2 */
-
-/* Name floats left */
-body > h1 {
-  float: left;
-  margin-bottom: 0;
-}
-
-/* Subtitle (job title) — stays left, under name */
-body > p:nth-of-type(1) {
-  clear: left;
-  float: left;
-  font-size: 12pt;
-  color: #595959;
-  margin-top: 0.2em;
-  margin-bottom: 0;
-  line-height: 1.4;
-}
-
-/* Contact lines (email, linkedin, github) — float right */
-body > p:nth-of-type(2),
-body > p:nth-of-type(3),
-body > p:nth-of-type(4) {
-  float: right;
-  text-align: right;
-  margin: 0;
-  line-height: 1.6;
-  font-size: 11pt;
-  color: #595959;
-}
-
-/* Clearfix before first section heading */
-body > h2:first-of-type {
-  clear: both;
-  margin-top: 1.2em;
-}
-
-/* Inline bold inside subtitle/contact lines stays #595959 */
-body > p:nth-of-type(1) strong,
-body > p:nth-of-type(1) b,
-body > p:nth-of-type(2) strong,
-body > p:nth-of-type(2) b,
-body > p:nth-of-type(3) strong,
-body > p:nth-of-type(3) b,
-body > p:nth-of-type(4) strong,
-body > p:nth-of-type(4) b {
-  color: #595959;
-}
-
 /* ── Paragraphs ──────────────────────────────────────────────────────────── */
 p {
   font-size: 12pt;

@@ -47,7 +47,8 @@ else
 fi
 
 # ── DOCX ──────────────────────────────────────────────────────────────────────
-if pandoc "$INPUT_PATH" -o "$DOCX_PATH" --reference-doc=resume-template.docx 2>/dev/null; then
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+if pandoc "$INPUT_PATH" -o "$DOCX_PATH" --reference-doc="$SCRIPT_DIR/resume-template.docx" 2>/dev/null; then
   echo -e "  ${GREEN}[DOCX]  OK -> $DOCX_PATH${RESET}"
   generated+=("$DOCX_PATH")
 else
