@@ -1,7 +1,7 @@
 /* resume.css — Alejandro Echeverría resume stylesheet
  * Works with: standalone HTML, pandoc --embed-resources, wkhtmltopdf PDF
  * Font spec: Calibri / Calibri Light / Segoe UI / Arial
- * Color spec: body #272727, headings/accents #2F5496, subtitle #595959, links #0563C1
+ * Color spec: body #272727, headings/accents #538135, subtitle #595959, links #0563C1
  */
 
 /* ── Reset & Base ─────────────────────────────────────────────────────────── */
@@ -43,8 +43,8 @@ h2 {
   font-family: "Calibri", "Calibri Light", "Segoe UI", Arial, sans-serif;
   font-size: 14pt;
   font-weight: 700;
-  color: #2F5496;
-  border-bottom: 1.5px solid #2F5496;
+  color: #538135;
+  border-bottom: 1.5px solid #538135;
   padding-bottom: 2px;
   margin-top: 1em;
   margin-bottom: 0.4em;
@@ -55,7 +55,7 @@ h3 {
   font-family: "Calibri", "Calibri Light", "Segoe UI", Arial, sans-serif;
   font-size: 12pt;
   font-weight: 600;
-  color: #2F5496;
+  color: #538135;
   border: none;
   margin-top: 0.6em;
   margin-bottom: 0.2em;
@@ -69,13 +69,54 @@ h4, h5, h6 {
   margin-bottom: 0.2em;
 }
 
-/* ── Subtitle / Tagline (job title under name, contact line) ─────────────── */
-/* Targets the first paragraph(s) immediately after H1 (before first H2) */
-h1 + p,
-h1 + p + p {
+/* ── Header layout: name+title LEFT, contact info RIGHT ─────────────────── */
+/* pandoc emits: h1 (name), p×4 (title, email, linkedin, github) then h2 */
+
+/* Name floats left */
+body > h1 {
+  float: left;
+  margin-bottom: 0;
+}
+
+/* Subtitle (job title) — stays left, under name */
+body > p:nth-of-type(1) {
+  clear: left;
+  float: left;
   font-size: 12pt;
   color: #595959;
-  margin-bottom: 0.3em;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* Contact lines (email, linkedin, github) — float right */
+body > p:nth-of-type(2),
+body > p:nth-of-type(3),
+body > p:nth-of-type(4) {
+  float: right;
+  text-align: right;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 11pt;
+  color: #595959;
+}
+
+/* Clearfix before first section heading */
+body > h2:first-of-type {
+  clear: both;
+  margin-top: 1.2em;
+}
+
+/* Inline bold inside subtitle/contact lines stays #595959 */
+body > p:nth-of-type(1) strong,
+body > p:nth-of-type(1) b,
+body > p:nth-of-type(2) strong,
+body > p:nth-of-type(2) b,
+body > p:nth-of-type(3) strong,
+body > p:nth-of-type(3) b,
+body > p:nth-of-type(4) strong,
+body > p:nth-of-type(4) b {
+  color: #595959;
 }
 
 /* ── Paragraphs ──────────────────────────────────────────────────────────── */
@@ -97,16 +138,8 @@ a:hover {
 
 /* ── Bold inline labels (e.g. **AI & ML:**) ──────────────────────────────── */
 strong, b {
-  color: #2F5496;
+  color: #538135;
   font-weight: 700;
-}
-
-/* Inline bold inside subtitle/contact line should stay #595959 */
-h1 + p strong,
-h1 + p b,
-h1 + p + p strong,
-h1 + p + p b {
-  color: #595959;
 }
 
 /* ── Lists ───────────────────────────────────────────────────────────────── */
@@ -146,8 +179,8 @@ table {
 
 th {
   font-weight: 700;
-  color: #2F5496;
-  border-bottom: 1.5px solid #2F5496;
+  color: #538135;
+  border-bottom: 1.5px solid #538135;
   padding: 2px 6px;
   text-align: left;
 }
