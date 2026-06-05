@@ -20,7 +20,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 
 **Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, Data Lake, Redis, Blob, Azure Container Apps.
 
-**Languages:** Python, C#, JavaScript, TypeScript, SQL, PowerShell.
+**Languages:** Python, C#, JavaScript, TypeScript, R, SQL, PowerShell.
 
 **Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform (IaC); data structures, algorithms, and performance principles.
 
