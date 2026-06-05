@@ -1,4 +1,4 @@
-# **Alejandro Echeverria**
+﻿# **Alejandro Echeverria**
 
 Senior Data and AI Solutions Engineer
 
@@ -14,45 +14,33 @@ Senior Data and AI Solutions Engineer
 
 ## Technical Skills
 
-> • AI & ML: LLMs, AI agents, multi-agent systems, RAG, intelligent automation; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; AI guardrails and Responsible AI practices.
+> â€¢ AI & ML: LLMs, AI agents, multi-agent systems, RAG, intelligent automation; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; AI guardrails and Responsible AI practices.
 >
-> • Data platform architecture: Lakehouse/warehouse patterns, secure multi-tenant design, performance and cost trade-offs.
+> â€¢ Data platform architecture: Lakehouse/warehouse patterns, secure multi-tenant design, performance and cost trade-offs.
 >
-> • Data engineering: ELT/ETL frameworks, data modeling, batch/stream processing, and API-based integrations.
+> â€¢ Data engineering: ELT/ETL frameworks, data modeling, batch/stream processing, and API-based integrations.
 >
-> • Azure data platform: Azure Data Factory, Synapse Analytics, Data Lake Storage, Event Hubs, Cosmos DB; Microsoft Fabric.
+> â€¢ Azure data platform: Azure Data Factory, Synapse Analytics, Data Lake Storage, Event Hubs, Cosmos DB; Microsoft Fabric.
 >
-> • Infrastructure & DevOps: Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI; pgvector, sqlite-vec; GitHub Copilot.
+> â€¢ Infrastructure & DevOps: Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI; pgvector, sqlite-vec; GitHub Copilot.
 >
-> • Languages: Python, SQL, C#, R, TypeScript/JavaScript, PowerShell.
+> â€¢ Languages: Python, SQL, C#, R, TypeScript/JavaScript, PowerShell.
 >
-> • Architecture: Solutions Architecture; .NET, Node.js, Entity Framework; async/parallel pipeline design; caching strategies.
+> â€¢ Architecture: Solutions Architecture; .NET, Node.js, Entity Framework; async/parallel pipeline design; caching strategies.
 >
-> • Security & Compliance: threat modeling, SAML, OAuth2.0, SSO; GDPR, CCPA, HIPAA; zero-trust-aligned design.
+> â€¢ Security & Compliance: threat modeling, SAML, OAuth2.0, SSO; GDPR, CCPA, HIPAA; zero-trust-aligned design.
 >
-> • Data quality & governance: validation strategies, privacy-by-design, and security controls for sensitive data.
+> â€¢ Data quality & governance: validation strategies, privacy-by-design, and security controls for sensitive data.
 >
-> • Operational excellence: troubleshooting, incident management, on-call support, and reliability improvements.
+> â€¢ Operational excellence: troubleshooting, incident management, on-call support, and reliability improvements.
 
 ## Soft Skills
 
-> • Technical project management: scoping, coordinating workflows, budgeting, and tracking deliverables.
->
-> • Industry and research experience.
->
-> • Workflow optimization and KPI-driven project delivery.
->
-> • Data-driven business insights, actionable metric creation from large raw data.
->
-> • Collaborative and effective cross-team communication, both technical and non-technical.
->
-> • Analysis, attention to detail, and problem-solving.
->
-> • Leadership, initiative, motivation, and accountability.
->
-> • Adaptability and a mindset focused on continuous learning.
->
-> • Security-oriented, with a focus on data privacy and responsible use of AI.
+**Delivery & Leadership:** Technical strategy and roadmap ownership across ambiguous, high-stakes problem spaces; cross-functional alignment from engineering to executive stakeholders; mentorship and technical leveling of engineering teams.
+
+**Communication & Influence:** Translating complex technical tradeoffs into clear recommendations for non-technical decision-makers; driving consensus across research, engineering, and operations; trusted advisor role in AI adoption for regulated domains; embedding with domain experts (epidemiology, global health) to rapidly acquire working knowledge and translate it into production technical requirements.
+
+**Professional:** Security-first mindset with focus on data privacy and responsible AI; bias toward measurable outcomes over process; continuous investment in emerging AI and data engineering practices.
 
 ## Professional Experience
 
@@ -62,10 +50,10 @@ Senior Data and AI Solutions Engineer
 
 *Seattle, WA*
 
-> - Architected AI-powered epidemiology dashboards deployed for national malaria eradication programs in Nigeria, Senegal, and Benin — surfacing key disease indicators, intervention cost-effectiveness, and national strategy scenario simulations used by health ministries and research partners to drive data-informed policy decisions.
+> - Architected AI-powered epidemiology dashboards deployed for national malaria eradication programs in Nigeria, Senegal, and Benin â€” surfacing key disease indicators, intervention cost-effectiveness, and national strategy scenario simulations used by health ministries and research partners to drive data-informed policy decisions.
 > - Built end-to-end data pipelines from epidemiology and disease simulation outputs to interactive decision-support visualizations, enabling IDM researchers and partner institutions to model intervention scenarios and project outcomes of national eradication strategies.
 > - Applied production AI practices across the research-to-deployment pipeline: data quality controls, privacy-by-design, prompt engineering, evaluation pipelines, and DevSecOps (CI/CD, automated security reviews) for global health research environments.
-> - Led technical planning and cross-functional alignment across research, engineering, and operations — translating complex epidemiology requirements into production-grade AI systems with direct adoption by partner institutions.
+> - Led technical planning and cross-functional alignment across research, engineering, and operations â€” translating complex epidemiology requirements into production-grade AI systems with direct adoption by partner institutions.
 
 ### Senior AI Solutions Consultant -- Dura Digital
 
@@ -73,7 +61,7 @@ Senior Data and AI Solutions Engineer
 
 *Seattle, WA*
 
-> - Provided architectural direction and implementation strategy for healthcare and financial organizations adopting ML/AI tooling and infrastructure — serving as trusted technical advisor during early AI adoption phases.
+> - Provided architectural direction and implementation strategy for healthcare and financial organizations adopting ML/AI tooling and infrastructure â€” serving as trusted technical advisor during early AI adoption phases.
 > - Identified key constraints and designed implementation roadmaps to bridge gaps between existing infrastructure and planned AI-focused architectures, enabling clients to move from strategy to production with clear milestones.
 > - Delivered secure, scalable, and compliant AI solutions for workflow automation, translating ambiguous business requirements into actionable technical plans with measurable outcomes.
 

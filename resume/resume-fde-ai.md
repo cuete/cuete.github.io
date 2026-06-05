@@ -28,11 +28,11 @@ Senior Software Engineer specializing in deploying AI solutions directly with cu
 
 ## Soft Skills
 
-**Customer & Delivery:** Translating ambiguous customer and research needs into working technical solutions; fast iteration in customer-facing environments; cross-team communication with both technical and non-technical stakeholders; technical project management.
+**Delivery & Leadership:** Technical strategy and roadmap ownership across ambiguous, high-stakes problem spaces; cross-functional alignment from engineering to executive stakeholders; mentorship and technical leveling of engineering teams.
 
-**Analysis & Insight:** Data-driven business insights; actionable metric creation from large raw data; attention to detail and problem-solving.
+**Communication & Influence:** Translating complex technical tradeoffs into clear recommendations for non-technical decision-makers; driving consensus across research, engineering, and operations; trusted advisor role in AI adoption for regulated domains; embedding with domain experts (epidemiology, global health) to rapidly acquire working knowledge and translate it into production technical requirements.
 
-**Professional:** Leadership, initiative, motivation, and accountability; security-oriented, with a focus on data privacy and responsible use of AI; adaptability and continuous learning mindset.
+**Professional:** Security-first mindset with focus on data privacy and responsible AI; bias toward measurable outcomes over process; continuous investment in emerging AI and data engineering practices.
 
 ## Professional Experience
 
