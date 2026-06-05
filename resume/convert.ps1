@@ -34,7 +34,7 @@ $generated  = @()
 Write-Host "`nConverting: $inputPath" -ForegroundColor Cyan
 
 # HTML
-& pandoc "$inputPath" -o "$htmlPath" --standalone 2>&1 | Out-Null
+& pandoc "$inputPath" -o "$htmlPath" --standalone --css resume.css --embed-resources 2>&1 | Out-Null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "  [HTML]  OK -> $htmlPath" -ForegroundColor Green
     $generated += $htmlPath
@@ -43,7 +43,7 @@ if ($LASTEXITCODE -eq 0) {
 }
 
 # DOCX
-& pandoc "$inputPath" -o "$docxPath" 2>&1 | Out-Null
+& pandoc "$inputPath" -o "$docxPath" --reference-doc=resume-template.docx 2>&1 | Out-Null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "  [DOCX]  OK -> $docxPath" -ForegroundColor Green
     $generated += $docxPath
@@ -51,20 +51,13 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "  [DOCX]  FAILED" -ForegroundColor Red
 }
 
-# PDF — try default engine (pdflatex), fall back to wkhtmltopdf
-& pandoc "$inputPath" -o "$pdfPath" 2>&1 | Out-Null
+# PDF — wkhtmltopdf with CSS
+& pandoc "$inputPath" -o "$pdfPath" --pdf-engine=wkhtmltopdf --css resume.css 2>&1 | Out-Null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "  [PDF]   OK -> $pdfPath" -ForegroundColor Green
     $generated += $pdfPath
 } else {
-    Write-Host "  [PDF]   Default engine failed, retrying with wkhtmltopdf..." -ForegroundColor Yellow
-    & pandoc "$inputPath" -o "$pdfPath" --pdf-engine=wkhtmltopdf 2>&1 | Out-Null
-    if ($LASTEXITCODE -eq 0) {
-        Write-Host "  [PDF]   OK (wkhtmltopdf) -> $pdfPath" -ForegroundColor Green
-        $generated += $pdfPath
-    } else {
-        Write-Host "  [PDF]   FAILED — install wkhtmltopdf (https://wkhtmltopdf.org) or a LaTeX distribution (MiKTeX / TeX Live)" -ForegroundColor Red
-    }
+    Write-Host "  [PDF]   FAILED — install wkhtmltopdf: https://wkhtmltopdf.org" -ForegroundColor Red
 }
 
 # Summary

@@ -39,7 +39,7 @@ generated=()
 echo -e "\n${CYAN}Converting: $INPUT_PATH${RESET}"
 
 # ── HTML ──────────────────────────────────────────────────────────────────────
-if pandoc "$INPUT_PATH" -o "$HTML_PATH" --standalone 2>/dev/null; then
+if pandoc "$INPUT_PATH" -o "$HTML_PATH" --standalone --css resume.css --embed-resources 2>/dev/null; then
   echo -e "  ${GREEN}[HTML]  OK -> $HTML_PATH${RESET}"
   generated+=("$HTML_PATH")
 else
@@ -47,22 +47,19 @@ else
 fi
 
 # ── DOCX ──────────────────────────────────────────────────────────────────────
-if pandoc "$INPUT_PATH" -o "$DOCX_PATH" 2>/dev/null; then
+if pandoc "$INPUT_PATH" -o "$DOCX_PATH" --reference-doc=resume-template.docx 2>/dev/null; then
   echo -e "  ${GREEN}[DOCX]  OK -> $DOCX_PATH${RESET}"
   generated+=("$DOCX_PATH")
 else
   echo -e "  ${RED}[DOCX]  FAILED${RESET}"
 fi
 
-# ── PDF — try default engine first, fall back to wkhtmltopdf ─────────────────
-if pandoc "$INPUT_PATH" -o "$PDF_PATH" 2>/dev/null; then
+# ── PDF — wkhtmltopdf with CSS ──────────────────────────────────────────────
+if pandoc "$INPUT_PATH" -o "$PDF_PATH" --pdf-engine=wkhtmltopdf --css resume.css 2>/dev/null; then
   echo -e "  ${GREEN}[PDF]   OK -> $PDF_PATH${RESET}"
   generated+=("$PDF_PATH")
-elif pandoc "$INPUT_PATH" -o "$PDF_PATH" --pdf-engine=wkhtmltopdf 2>/dev/null; then
-  echo -e "  ${GREEN}[PDF]   OK (wkhtmltopdf) -> $PDF_PATH${RESET}"
-  generated+=("$PDF_PATH")
 else
-  echo -e "  ${RED}[PDF]   FAILED — install wkhtmltopdf (https://wkhtmltopdf.org) or a LaTeX distribution (TeX Live / MacTeX)${RESET}"
+  echo -e "  ${RED}[PDF]   FAILED — install wkhtmltopdf: https://wkhtmltopdf.org${RESET}"
 fi
 
 # ── Summary ───────────────────────────────────────────────────────────────────
