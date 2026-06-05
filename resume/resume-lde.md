@@ -1,5 +1,3 @@
-# 
-
 # **Alejandro Echeverria**
 
 Senior Data and AI Solutions Engineer
@@ -72,11 +70,10 @@ Senior Data and AI Solutions Engineer
 
 *Seattle, WA*
 
-> At the Institute for Disease Modeling (IDM), I design and deploy AI-powered systems that accelerate global health research. I architect end-to-end AI pipelines — from epidemiology and simulation data to interactive visualizations and decision-support tools — used by researchers and stakeholders to drive data-informed decisions in infectious disease eradication.
->
-> I integrate AI capabilities into research workflows with a focus on production readiness: data quality, privacy controls, prompt engineering, and evaluation pipelines engineered for direct adoption by partner institutions and LMICs. I lead rapid prototyping and delivery of AI solutions, applying DevSecOps practices (automation, CI/CD, security reviews) to ensure reliability and scale.
->
-> I drive technical planning and cross-functional alignment across research, engineering, and operations — recommending AI tooling and platform choices, contributing to shared frameworks, and translating complex research requirements into production-grade systems with measurable impact.
+> - Architected AI-powered epidemiology dashboards deployed for national malaria eradication programs in Nigeria, Senegal, and Benin — surfacing key disease indicators, intervention cost-effectiveness, and national strategy scenario simulations used by health ministries and research partners to drive data-informed policy decisions.
+> - Built end-to-end data pipelines from epidemiology and disease simulation outputs to interactive decision-support visualizations, enabling IDM researchers and partner institutions to model intervention scenarios and project outcomes of national eradication strategies.
+> - Applied production AI practices across the research-to-deployment pipeline: data quality controls, privacy-by-design, prompt engineering, evaluation pipelines, and DevSecOps (CI/CD, automated security reviews) for global health research environments.
+> - Led technical planning and cross-functional alignment across research, engineering, and operations — translating complex epidemiology requirements into production-grade AI systems with direct adoption by partner institutions.
 
 ### Senior AI Solutions Consultant -- Dura Digital
 
@@ -84,7 +81,9 @@ Senior Data and AI Solutions Engineer
 
 *Seattle, WA*
 
-> As Senior AI Solutions Consultant, I architected and delivered AI solutions for workflow automation in healthcare and finance. I provided clarity to complex projects and drove business value by helping organizations adopt AI for greater efficiency. Solutions were secure, scalable, and compliant, enabling streamlined processes and unlocking new operational benefits. Dura Digital is a global IT consulting and services firm dedicated to delivering business, data, and AI-driven growth solutions.
+> - Provided architectural direction and implementation strategy for healthcare and financial organizations adopting ML/AI tooling and infrastructure — serving as trusted technical advisor during early AI adoption phases.
+> - Identified key constraints and designed implementation roadmaps to bridge gaps between existing infrastructure and planned AI-focused architectures, enabling clients to move from strategy to production with clear milestones.
+> - Delivered secure, scalable, and compliant AI solutions for workflow automation, translating ambiguous business requirements into actionable technical plans with measurable outcomes.
 
 ### Software Engineer II -- Microsoft
 
@@ -101,8 +100,6 @@ I utilized infrastructure as code, implemented CI/CD automation and release gove
 I conducted threat modeling and implemented zero-trust strategies to secure sensitive and confidential data, critical services and managed incident response for high-priority incidents and outages.
 
 I delivered global solutions for consumer and enterprise customer support, including AI Services, Communication Services, APIs, machine learning and intelligent automation, speech recognition and analytics, cognitive tools, and metric processing and analysis while ensuring security and information privacy.
-
-### 
 
 ### Software Engineer - Motiv Inc. (Microsoft Contract)
 
@@ -126,7 +123,7 @@ I delivered global solutions for consumer and enterprise customer support, inclu
 
 *Kirkland, WA*
 
-> I designed and executed automated tests for web, mobile, and desktop software products. I developed unit and integration tests for web applications and APIs using automated frameworks and custom scripting. I wrote test plans, researched, and implemented test automation tools and frameworks. I led offshore and on-site testing teams. iSoftStone is a global IT and business services provider for Fortune 100 technology companies.
+Designed and executed automated test suites for web, mobile, and desktop products at Fortune 100 technology clients. Built unit and integration test frameworks, wrote test plans, and led offshore and on-site QA teams.
 
 ## Education
 
