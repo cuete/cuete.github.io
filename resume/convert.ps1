@@ -31,10 +31,13 @@ $pdfPath    = Join-Path $dir "$baseName.pdf"
 
 $generated  = @()
 
+# Document title for HTML <title> / PDF metadata (not rendered as a body heading)
+$docTitle   = "Alejandro Echeverría - Résumé"
+
 Write-Host "`nConverting: $inputPath" -ForegroundColor Cyan
 
 # HTML
-& pandoc "$inputPath" -o "$htmlPath" --standalone --css resume.css --embed-resources 2>&1 | Out-Null
+& pandoc "$inputPath" -o "$htmlPath" --standalone --css resume.css --embed-resources --metadata "pagetitle=$docTitle" 2>&1 | Out-Null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "  [HTML]  OK -> $htmlPath" -ForegroundColor Green
     $generated += $htmlPath
@@ -53,7 +56,7 @@ if ($LASTEXITCODE -eq 0) {
 }
 
 # PDF — wkhtmltopdf with CSS
-& pandoc "$inputPath" -o "$pdfPath" --pdf-engine=wkhtmltopdf --css resume.css 2>&1 | Out-Null
+& pandoc "$inputPath" -o "$pdfPath" --pdf-engine=wkhtmltopdf --css resume.css --metadata "pagetitle=$docTitle" 2>&1 | Out-Null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "  [PDF]   OK -> $pdfPath" -ForegroundColor Green
     $generated += $pdfPath

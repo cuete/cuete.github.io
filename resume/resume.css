@@ -23,7 +23,29 @@ body {
   background: #ffffff;
   max-width: 800px;
   margin: 0 auto;
-  padding: 2.54cm; /* 1 inch all sides — matches PDF page margins */
+  padding: 1.27cm; /* 0.5 inch all sides — matches PDF page margins & DOCX */
+}
+
+/* ── Header (name left, contact right) ───────────────────────────────────── */
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5em;
+  margin-bottom: 0.4em;
+}
+.resume-header h1 {
+  margin-bottom: 0.1em;
+}
+.rh-title {
+  color: #595959;
+  font-size: 12pt;
+}
+.rh-contact {
+  text-align: right;
+  font-size: 11pt;
+  line-height: 1.5;
+  white-space: nowrap;
 }
 
 /* ── Headings ─────────────────────────────────────────────────────────────── */
@@ -159,7 +181,7 @@ pre {
 @media print {
   /* Use exact page margins — wkhtmltopdf respects these */
   @page {
-    margin: 2.54cm; /* 1 inch all sides */
+    margin: 1.27cm; /* 0.5 inch all sides */
   }
 
   body {
