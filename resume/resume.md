@@ -14,7 +14,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 
 ## Technical Skills
 
-**AI & ML:** Generative and analytical ML/AI, LLMs, AI agents, multi-agent systems, intelligent automation, design patterns; prompt engineering, prompt optimization, and token cost management (FinOps for AI); model selection and right-sizing strategies; Retrieval-Augmented Generation (RAG); latency optimization and performance benchmarking; model evaluation and A/B testing; Azure OpenAI; AI guardrails and Responsible AI practices.
+**AI & ML:** Generative and analytical ML/AI, LLMs, AI agents, multi-agent systems, intelligent automation, design patterns; prompt engineering, prompt and context optimization, and token cost management (FinOps for AI); model selection and right-sizing strategies; Retrieval-Augmented Generation (RAG); latency optimization and performance benchmarking; model evaluation and A/B testing; Azure OpenAI; AI guardrails and Responsible AI practices.
 
 **Scalability & Performance:** Distributed AI pipeline design; horizontal scaling with Kubernetes; streaming AI workloads (Event Hub); async/parallel pipeline architecture; caching strategies for AI services; Azure AI cost monitoring and budget governance.
 
@@ -26,7 +26,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 
 
 
-**AI Tooling:** LangChain, LangGraph, Azure AI Foundry, GitHub Copilot; FastAPI for AI service APIs; pgvector, sqlite-vec for vector search; Bicep (IaC).
+**AI Tooling & SDKs:** LangChain, LangGraph, Azure AI Foundry, GitHub Copilot; OpenAI SDK, Anthropic Claude SDK; local LLMs for prototyping and fast implementation; Databricks; FastAPI for AI service APIs; pgvector, sqlite-vec for vector search; Bicep (IaC).
 
 **Architecture & Frameworks:** Solutions Architecture; .NET, Node.js, Entity Framework; TCP/IP, HTTP, Zero Trust Network; SDL, Scrum, Agile, DevOps.
 

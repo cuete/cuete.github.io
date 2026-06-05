@@ -24,7 +24,7 @@ Senior Data and AI Solutions Engineer
 >
 > • Azure data platform: Azure Data Factory, Synapse Analytics, Data Lake Storage, Event Hubs, Cosmos DB; Microsoft Fabric.
 >
-> • AI developer tooling: Microsoft Foundry, Copilot Studio, Claude Code, GitHub Copilot.
+> • AI developer tooling: Microsoft Foundry, Copilot Studio, Claude Code, GitHub Copilot; OpenAI SDK, Anthropic Claude SDK; LangChain, LangGraph; local LLMs for prototyping; Databricks; RAG architectures; prompt, context, and token optimization.
 >
 > • Languages: Python, SQL, C#, R, TypeScript/JavaScript, PowerShell.
 >
