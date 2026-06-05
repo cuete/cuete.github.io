@@ -1,12 +1,8 @@
 # **Alejandro Echeverria**
-
-Senior Data and AI Solutions Engineer
-
-<nablaservices@outlook.com>
-
-<https://linkedin.com/in/cuete>
-
-<https://github.com/cuete>
+Senior Data and AI Solutions Engineer  
+<nablaservices@outlook.com>  
+<https://linkedin.com/in/cuete>  
+<https://github.com/cuete>  
 
 ## Professional Summary
 
@@ -16,7 +12,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 
 **AI & ML:** LLMs, AI agents, multi-agent systems, RAG, intelligent automation; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; AI guardrails and Responsible AI practices.
 
-**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, Data Lake, Redis, Blob, Azure Container Apps.
+**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, SQLite, Data Lake, Redis, Blob, Azure Container Apps.
 
 **Languages:** Python, C#, JavaScript, TypeScript, R, SQL, PowerShell.
 
@@ -37,9 +33,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 ## Professional Experience
 
 ### Senior Software Engineer (Data and Statistical Modeling) -- Gates Foundation
-
 *2025 - Current*
-
 *Seattle, WA*
 
 - Architected AI-powered epidemiology dashboards deployed for national malaria eradication programs in Nigeria, Senegal, and Benin — surfacing key disease indicators, intervention cost-effectiveness, and national strategy scenario simulations used by health ministries and research partners to drive data-informed policy decisions.
@@ -48,21 +42,15 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 - Led technical planning and cross-functional alignment across research, engineering, and operations — translating complex epidemiology requirements into production-grade AI systems with direct adoption by partner institutions.
 
 ### Senior AI Solutions Consultant -- Dura Digital
-
-*2025*
-
+*2025 - Current*
 *Seattle, WA*
 
 - Provided architectural direction and implementation strategy for healthcare and financial organizations adopting ML/AI tooling and infrastructure — serving as trusted technical advisor during early AI adoption phases.
-
 - Identified key constraints and designed implementation roadmaps to bridge gaps between existing infrastructure and planned AI-focused architectures, enabling clients to move from strategy to production with clear milestones.
-
 - Delivered secure, scalable, and compliant AI solutions for workflow automation, translating ambiguous business requirements into actionable technical plans with measurable outcomes.
 
 ### Software Engineer II -- Microsoft
-
 *2019 -- 2025*
-
 *Redmond, WA*
 
 - Designed and shipped frontier ML/AI speech-to-text systems for enterprise customer support, reducing agent oversight overhead by 50% through intelligent automation and real-time AI assistance.
@@ -71,25 +59,19 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 - Conducted threat modeling and implemented zero-trust security strategies to protect critical services and sensitive customer data; managed incident response for high-priority production outages.
 
 ### Software Engineer - Motiv Inc. (Microsoft Contract)
-
 *2017 -- 2019*
-
 *Redmond, WA*
 
 I developed secure, high-throughput, cloud applications at Microsoft\'s Core Platform Engineering Group. I developed APIs and microservices, identified and mitigated software vulnerabilities, enforced data privacy requirements, security, and compliance, implemented DevOps processes, and hardened resources and applications to meet world-class industry standards.
 
 ### Software Engineer - Getty Images
-
 *2012 -- 2017*
-
 *Seattle, WA*
 
 I developed and tested web services and databases handling confidential financial data and the time-sensitive royalty calculation processes. Areas of experience included .NET development, relational databases, message brokers, monitoring and integration platforms, CI/CD, DevOps and Agile methodologies, and on-call engineering support. Getty Images is the global leader in multimedia and royalty services.
 
 ### Software Engineer in Test - iSoftStone Inc.
-
 *2007 -- 2012*
-
 *Kirkland, WA*
 
 Designed and executed automated test suites for web, mobile, and desktop products at Fortune 100 technology clients. Built unit and integration test frameworks, wrote test plans, and led offshore and on-site QA teams.
@@ -103,9 +85,6 @@ Universidad del Valle de Guatemala
 ## Certifications
 
 - Agile Project Management, Google
-
 - Azure Security Engineer Associate, Microsoft
-
 - Solutions Architecture, University of Washington
-
 - Telecommunications and Networks, America Movil
