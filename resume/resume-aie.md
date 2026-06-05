@@ -67,7 +67,10 @@ Senior AI Engineer with 10+ years in AI and 18+ years in software engineering. I
 
 *Redmond, WA*
 
-I designed and shipped AI-powered enterprise products at scale, including AI Services, intelligent automation, speech recognition and analytics, and cognitive tools supporting millions of global users. I architected machine learning pipelines and integrated AI/ML capabilities into cloud-native applications using Azure infrastructure and DevOps practices. I conducted threat modeling and implemented zero-trust strategies to secure AI services, and managed incident response for high-priority production incidents.
+- Designed and shipped frontier ML/AI speech-to-text systems for enterprise customer support, reducing agent oversight overhead by 50% through intelligent automation and real-time AI assistance.
+- Built real-time and post-call customer satisfaction metric pipelines, enabling live supervisor awareness and KPI rollup evaluation across global support operations.
+- Architected and delivered large-scale cloud-native enterprise applications using Azure infrastructure (Data Factory, Event Hub, Data Lake, Cosmos DB), DevOps practices, and CI/CD automation.
+- Conducted threat modeling and implemented zero-trust security strategies to protect critical services and sensitive customer data; managed incident response for high-priority production outages.
 
 ### Software Engineer - Motiv Inc. (Microsoft Contract)
 

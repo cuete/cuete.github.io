@@ -71,7 +71,10 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 
 *Redmond, WA*
 
-I was responsible for driving the development of high-impact, large-scale enterprise cloud applications from initial business requirements to maintenance and support. I utilized Azure cloud infrastructure, DevOps practices, CI/CD, AI/ML, and data analytics to deliver global, world-class enterprise software products. I conducted threat modeling and implemented zero-trust strategies to secure critical services and managed incident response for high-priority incidents and outages. I delivered global solutions for consumer and enterprise customer support, including AI Services, Communication Services, APIs, machine learning and intelligent automation, speech recognition and analytics, cognitive tools, and metric processing and analysis while ensuring security and information privacy.
+- Designed and shipped frontier ML/AI speech-to-text systems for enterprise customer support, reducing agent oversight overhead by 50% through intelligent automation and real-time AI assistance.
+- Built real-time and post-call customer satisfaction metric pipelines, enabling live supervisor awareness and KPI rollup evaluation across global support operations.
+- Architected and delivered large-scale cloud-native enterprise applications using Azure infrastructure (Data Factory, Event Hub, Data Lake, Cosmos DB), DevOps practices, and CI/CD automation.
+- Conducted threat modeling and implemented zero-trust security strategies to protect critical services and sensitive customer data; managed incident response for high-priority production outages.
 
 ### Software Engineer - Motiv Inc. (Microsoft Contract)
 
