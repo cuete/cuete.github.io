@@ -44,7 +44,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 
 ## Professional Experience
 
-### Senior Software Engineer (Data and Statistical Modeling) -- Gates Foundation
+### Senior Software Engineer (Data and Statistical Modeling) - Gates Foundation
 *2025 – Current*  
 *Seattle, WA*
 
@@ -53,7 +53,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 - Applied production AI practices across the research-to-deployment pipeline: data quality controls, privacy-by-design, prompt engineering, evaluation pipelines, and DevSecOps (CI/CD, automated security reviews) for global health research environments.
 - Led technical planning and cross-functional alignment across research, engineering, and operations — translating complex epidemiology requirements into production-grade AI systems with direct adoption by partner institutions.
 
-### Senior AI Solutions Consultant -- Dura Digital
+### Senior AI Solutions Consultant - Dura Digital
 *2025 – Current*  
 *Seattle, WA*
 
@@ -61,7 +61,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 - Identified key constraints and designed implementation roadmaps to bridge gaps between existing infrastructure and planned AI-focused architectures, enabling clients to move from strategy to production with clear milestones.
 - Delivered secure, scalable, and compliant AI solutions for workflow automation, translating ambiguous business requirements into actionable technical plans with measurable outcomes.
 
-### Software Engineer II -- Microsoft
+### Software Engineer II - Microsoft
 *2019 – 2025*  
 *Redmond, WA*
 

@@ -47,7 +47,7 @@ if ($LASTEXITCODE -eq 0) {
 
 # DOCX
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-& pandoc "$inputPath" -o "$docxPath" --reference-doc="$scriptDir\resume-template.docx" 2>&1 | Out-Null
+& pandoc "$inputPath" -o "$docxPath" --reference-doc="$scriptDir\resume-template.docx" --lua-filter="$scriptDir\strip-ids.lua" 2>&1 | Out-Null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "  [DOCX]  OK -> $docxPath" -ForegroundColor Green
     $generated += $docxPath
