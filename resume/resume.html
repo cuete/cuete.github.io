@@ -50,8 +50,12 @@ RAG, NLP (natural language processing), intelligent automation, MLOps;
 OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry;
 LangChain, LangGraph; local LLMs for prototyping; Databricks; prompt,
 context, and token optimization (FinOps for AI); model selection,
-evaluation, and A/B testing; AI guardrails and Responsible AI
-practices.</p>
+evaluation, and A/B testing; AI guardrails and Responsible AI practices;
+document ingestion pipelines (multi-format: PDF, DOCX, email, OCR),
+recursive chunking, sentence-transformers embeddings, hybrid search
+(vector + BM25/RRF), sqlite-vec and pgvector; multi-agent supervisor
+orchestration patterns (LangGraph-equivalent: supervisor node,
+conditional routing, async interrupt/resume).</p>
 <p><strong>Data &amp; Cloud:</strong> Azure Data Factory, Synapse
 Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB,
 Microsoft Fabric; SQL, NoSQL, SQLite, ETL/ELT, data modeling, Data Lake,
@@ -85,6 +89,31 @@ requirements.</p>
 data privacy and responsible AI; bias toward measurable outcomes over
 process; continuous investment in emerging AI and data engineering
 practices.</p>
+<h2 id="personal-projects">Personal Projects</h2>
+<h3 id="legal-document-intelligence-system">Legal Document Intelligence
+System</h3>
+<p><em>2025 - Present</em></p>
+<p>Built a production RAG pipeline for legal document analysis from
+scratch. Source connectors for Gmail API and OneDrive, multi-format
+extraction (PDF, DOCX, EML, XLSX, images via OCR), and a classification
+layer that enriches document metadata before indexing. Recursive
+chunking (800 chars / 150 overlap) tuned for legal prose, vector
+embeddings with sentence-transformers (all-mpnet-base-v2, 768 dims), and
+hybrid semantic search using sqlite-vec with metadata filters. In
+LangChain terms: <code>DocumentLoader</code> +
+<code>DocumentTransformer</code> +
+<code>RecursiveCharacterTextSplitter</code> + <code>VectorStore</code>
+pipeline. In LlamaIndex: <code>SimpleDirectoryReader</code> with custom
+<code>MetadataExtractor</code> + <code>SentenceSplitter</code> +
+<code>VectorStoreIndex</code>. 314 documents, 4,391 chunks, sub-200ms
+queries.</p>
+<p>Also designed and operate a multi-agent personal assistant system
+with a supervisor orchestration pattern: a primary agent routes tasks to
+specialized agents (code, legal, research) based on task type and cost.
+Async delegation via spawn/yield maps to LangGraph’s interrupt/resume
+pattern. Each agent is tool-augmented with typed schemas equivalent to
+LangChain <code>StructuredTool</code> / LlamaIndex
+<code>FunctionTool</code>.</p>
 <h2 id="professional-experience">Professional Experience</h2>
 <h3 id="senior-software-engineer-data-and-statistical-modeling---gates-foundation">Senior
 Software Engineer (Data and Statistical Modeling) - Gates

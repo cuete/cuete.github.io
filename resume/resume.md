@@ -22,7 +22,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 
 ## Technical Skills
 
-**AI & ML:** LLMs, AI agents, multi-agent systems, RAG, NLP (natural language processing), intelligent automation, MLOps; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; AI guardrails and Responsible AI practices.
+**AI & ML:** LLMs, AI agents, multi-agent systems, RAG, NLP (natural language processing), intelligent automation, MLOps; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; AI guardrails and Responsible AI practices; document ingestion pipelines (multi-format: PDF, DOCX, email, OCR), recursive chunking, sentence-transformers embeddings, hybrid search (vector + BM25/RRF), sqlite-vec and pgvector; multi-agent supervisor orchestration patterns (LangGraph-equivalent: supervisor node, conditional routing, async interrupt/resume).
 
 **Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, SQLite, ETL/ELT, data modeling, Data Lake, Redis, Blob, Azure Container Apps.
 
@@ -41,6 +41,15 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 **Communication & Influence:** Translating complex technical tradeoffs into clear recommendations for non-technical decision-makers; driving consensus across research, engineering, and operations; trusted advisor role in AI adoption for regulated domains; embedding with domain experts (epidemiology, global health) to rapidly acquire working knowledge and translate it into production technical requirements.
 
 **Professional:** Security-first mindset with focus on data privacy and responsible AI; bias toward measurable outcomes over process; continuous investment in emerging AI and data engineering practices.
+
+## Personal Projects
+
+### Legal Document Intelligence System
+*2025 - Present*
+
+Built a production RAG pipeline for legal document analysis from scratch. Source connectors for Gmail API and OneDrive, multi-format extraction (PDF, DOCX, EML, XLSX, images via OCR), and a classification layer that enriches document metadata before indexing. Recursive chunking (800 chars / 150 overlap) tuned for legal prose, vector embeddings with sentence-transformers (all-mpnet-base-v2, 768 dims), and hybrid semantic search using sqlite-vec with metadata filters. In LangChain terms: `DocumentLoader` + `DocumentTransformer` + `RecursiveCharacterTextSplitter` + `VectorStore` pipeline. In LlamaIndex: `SimpleDirectoryReader` with custom `MetadataExtractor` + `SentenceSplitter` + `VectorStoreIndex`. 314 documents, 4,391 chunks, sub-200ms queries.
+
+Also designed and operate a multi-agent personal assistant system with a supervisor orchestration pattern: a primary agent routes tasks to specialized agents (code, legal, research) based on task type and cost. Async delegation via spawn/yield maps to LangGraph's interrupt/resume pattern. Each agent is tool-augmented with typed schemas equivalent to LangChain `StructuredTool` / LlamaIndex `FunctionTool`.
 
 ## Professional Experience
 
