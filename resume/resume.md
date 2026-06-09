@@ -34,6 +34,14 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 
 **Security & Compliance:** Threat modeling, SAML, OAuth2.0, SSO; GDPR, CCPA, HIPAA; Linux systems administration and internals.
 
+## Soft Skills
+
+**Leadership:** Technical strategy ownership in ambiguous problem spaces; cross-functional alignment from engineering to executive stakeholders; mentorship and technical leveling of engineering teams.
+
+**Communication:** Translating technical tradeoffs into clear recommendations for non-technical decision-makers; trusted advisor role in AI adoption for regulated domains; rapidly acquiring domain knowledge (epidemiology, global health) and translating it into production requirements.
+
+**Professional:** Security-first mindset; responsible AI and data privacy focus; bias toward measurable outcomes over process.
+
 ## Personal Projects
 
 ### Legal Document Intelligence System
