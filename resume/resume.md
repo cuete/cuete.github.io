@@ -51,6 +51,11 @@ Built a production RAG pipeline for legal document analysis: Gmail API and OneDr
 
 Designed and operate a multi-agent assistant system with supervisor orchestration: primary agent routes tasks to specialized agents (code, legal, research) by type and cost. Async delegation pattern maps to LangGraph interrupt/resume. Each agent is tool-augmented with typed input/output schemas.
 
+### Semantic Analysis Platform
+*2026 - Present*
+
+Built a full-stack document intelligence platform for multi-source ingestion, semantic analysis, and knowledge mapping. FastAPI backend + React frontend; ingests URLs, PDFs, and text with automated AI suspicion and quality ratings post-ingest. LLM pipeline performs semantic chunking by logical section (chapter/article boundaries), extracts concept graphs per section, merges partial graphs with deduplication, and runs a consolidation pass for semantic synonym resolution, covering 100% of the document. Fact-check feature extracts verifiable claims, queries Perplexity, and feeds results back into the quality score. Three synchronized views (concept map, chat, document) over the same content, with bidirectional highlight and navigation between views.
+
 ## Professional Experience
 
 ### Senior Software Engineer (Data and Statistical Modeling) - Gates Foundation
