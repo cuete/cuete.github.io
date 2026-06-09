@@ -1,4 +1,4 @@
-```{=html}
+﻿```{=html}
 <div class="resume-header">
 <div class="rh-left">
 <h1>Alejandro Echeverria</h1>
@@ -18,7 +18,7 @@
 
 ## Professional Summary
 
-Senior Software Engineer with 18+ years of experience across data engineering, AI systems, and cloud-native software. I design and deploy production-ready AI pipelines, data platforms, and decision-support tools — translating complex research and business requirements into scalable, secure, and measurable outcomes, with a track record of stakeholder alignment from research teams to executive leadership. Experience spans global health research, enterprise software at Microsoft, and AI consulting for healthcare and finance.
+Senior Software Engineer with 18+ years of experience across data engineering, AI systems, and cloud-native software. I design and deploy production-ready AI pipelines, data platforms, and decision-support tools - translating complex research and business requirements into scalable, secure, and measurable outcomes, with a track record of stakeholder alignment from research teams to executive leadership. Experience spans global health research, enterprise software at Microsoft, and AI consulting for healthcare and finance.
 
 ## Technical Skills
 
@@ -48,16 +48,16 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 *2025 – Current*  
 *Seattle, WA*
 
-- Architected AI-powered epidemiology dashboards deployed for national malaria eradication programs in Nigeria, Senegal, and Benin — surfacing key disease indicators, intervention cost-effectiveness, and national strategy scenario simulations used by health ministries and research partners to drive data-informed policy decisions.
+- Architected AI-powered epidemiology dashboards deployed for national malaria eradication programs in Nigeria, Senegal, and Benin - surfacing key disease indicators, intervention cost-effectiveness, and national strategy scenario simulations used by health ministries and research partners to drive data-informed policy decisions.
 - Built end-to-end data pipelines from epidemiology and disease simulation outputs to interactive decision-support visualizations, enabling IDM researchers and partner institutions to model intervention scenarios and project outcomes of national eradication strategies.
 - Applied production AI practices across the research-to-deployment pipeline: data quality controls, privacy-by-design, prompt engineering, evaluation pipelines, and DevSecOps (CI/CD, automated security reviews) for global health research environments.
-- Led technical planning and cross-functional alignment across research, engineering, and operations — translating complex epidemiology requirements into production-grade AI systems with direct adoption by partner institutions.
+- Led technical planning and cross-functional alignment across research, engineering, and operations - translating complex epidemiology requirements into production-grade AI systems with direct adoption by partner institutions.
 
 ### Senior AI Solutions Consultant - Dura Digital
 *2025 – Current*  
 *Seattle, WA*
 
-- Provided architectural direction and implementation strategy for healthcare and financial organizations adopting ML/AI tooling and infrastructure — serving as trusted technical advisor during early AI adoption phases.
+- Provided architectural direction and implementation strategy for healthcare and financial organizations adopting ML/AI tooling and infrastructure - serving as trusted technical advisor during early AI adoption phases.
 - Identified key constraints and designed implementation roadmaps to bridge gaps between existing infrastructure and planned AI-focused architectures, enabling clients to move from strategy to production with clear milestones.
 - Delivered secure, scalable, and compliant AI solutions for workflow automation, translating ambiguous business requirements into actionable technical plans with measurable outcomes.
 
