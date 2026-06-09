@@ -39,7 +39,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 ### Legal Document Intelligence System
 *2025 - Present*
 
-Built a production RAG pipeline for legal document analysis: Gmail API and OneDrive source connectors, multi-format extraction (PDF, DOCX, EML, XLSX, OCR), classification-first metadata enrichment, recursive chunking tuned for legal prose, sentence-transformers embeddings (768 dims), and semantic search with sqlite-vec. 314 documents, 4,391 chunks, sub-200ms queries.
+Built a production RAG pipeline for legal document analysis: Gmail API and OneDrive source connectors, multi-format extraction (PDF, DOCX, EML, XLSX, OCR), classification-first metadata enrichment, recursive chunking tuned for legal prose, sentence-transformers embeddings (768 dims), and semantic search with sqlite-vec. Benchmarked chunk-level vs single-doc retrieval: chunk strategy scores 13% higher precision (0.538 vs 0.475 avg similarity) with only 42% result overlap, confirming chunks surface passage-level relevance that document-level embeddings miss. 314 documents, 4,391 chunks, sub-200ms queries.
 
 Designed and operate a multi-agent assistant system with supervisor orchestration: primary agent routes tasks to specialized agents (code, legal, research) by type and cost. Async delegation pattern maps to LangGraph interrupt/resume. Each agent is tool-augmented with typed input/output schemas.
 
