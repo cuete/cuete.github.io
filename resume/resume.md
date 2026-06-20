@@ -59,7 +59,7 @@ Built a full-stack document intelligence platform for multi-source ingestion, se
 ## Professional Experience
 
 ### Senior Software Engineer (Data and Statistical Modeling) - Gates Foundation
-*2025 - Current*
+*2025 - Current*  
 *Seattle, WA*
 
 - Architected AI-powered epidemiology dashboards for national malaria eradication programs in Nigeria, Senegal, and Benin - surfacing disease indicators, intervention cost-effectiveness, and scenario simulations used by health ministries to drive policy decisions.
@@ -68,7 +68,7 @@ Built a full-stack document intelligence platform for multi-source ingestion, se
 - Led cross-functional technical planning across research, engineering, and operations - translating epidemiology requirements into production AI systems adopted by partner institutions.
 
 ### Senior AI Solutions Consultant - Dura Digital
-*2025 - Current*
+*2025 - Current*  
 *Seattle, WA*
 
 - Provided architectural direction and implementation strategy for healthcare and financial organizations adopting ML/AI tooling and infrastructure - serving as trusted technical advisor during early AI adoption phases.
@@ -76,7 +76,7 @@ Built a full-stack document intelligence platform for multi-source ingestion, se
 - Delivered secure, scalable, and compliant AI solutions for workflow automation, translating ambiguous business requirements into actionable technical plans with measurable outcomes.
 
 ### Software Engineer II - Microsoft
-*2019 - 2025*
+*2019 - 2025*  
 *Redmond, WA*
 
 - Designed and shipped frontier ML/AI speech-to-text systems for enterprise customer support, reducing agent oversight overhead by 50% through intelligent automation and real-time AI assistance.
@@ -97,7 +97,7 @@ Built a full-stack document intelligence platform for multi-source ingestion, se
 - Developed and tested web services and databases for financial data processing and royalty calculations: .NET, relational databases, message brokers, monitoring platforms, CI/CD, and on-call engineering support.
 
 ### Software Engineer in Test - iSoftStone Inc.
-*2007 - 2012*
+*2007 - 2012*  
 *Kirkland, WA*
 
 Designed and executed automated test suites for web, mobile, and desktop products at Fortune 100 technology clients. Built unit and integration test frameworks, wrote test plans, and led offshore and on-site QA teams.
