@@ -2,7 +2,7 @@
 <div class="resume-header">
 <div class="rh-left">
 <h1>Alejandro Echeverria</h1>
-<div class="rh-title">Senior Data and AI Solutions Engineer</div>
+<div class="rh-title">Senior AI and Data Solutions Engineer</div>
 </div>
 <div class="rh-contact">
 <a href="mailto:nablaservices@outlook.com">nablaservices@outlook.com</a><br>
@@ -18,11 +18,11 @@
 
 ## Professional Summary
 
-Senior Software Engineer with 18+ years of experience across data engineering, AI systems, and cloud-native software. I design and deploy production-ready AI pipelines, data platforms, and decision-support tools - translating complex technical requirements into scalable, secure, and measurable outcomes. Experience spans global health research, enterprise software at Microsoft, and AI consulting for healthcare and finance.
+Senior Software Engineer with 18+ years of experience across, AI systems, data engineering, and cloud-native software. I design and deploy production-ready AI pipelines, data platforms, and decision-support tools - translating complex technical requirements into scalable, secure, and measurable outcomes. Experience spans global health research, enterprise software at Microsoft, and AI consulting for healthcare and finance.
 
 ## Technical Skills
 
-**AI & ML:** LLMs, AI agents, multi-agent systems, RAG, NLP (natural language processing), intelligent automation, MLOps; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; knowledge graphs, semantic concept extraction; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; automated LLM-based quality scoring pipelines; AI guardrails and Responsible AI practices; document ingestion pipelines (multi-format: PDF, DOCX, email, OCR), recursive chunking, sentence-transformers embeddings, hybrid search (vector + BM25/RRF), sqlite-vec and pgvector; multi-agent supervisor orchestration patterns (LangGraph-equivalent: supervisor node, conditional routing, async interrupt/resume).
+**AI & ML:** LLMs, AI agents, multi-agent systems, RAG, NLP (natural language processing), intelligent automation, MLOps; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; knowledge graphs, semantic concept extraction; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; automated LLM-based quality scoring pipelines; AI guardrails and Responsible AI practices; document ingestion pipelines (multi-format: PDF, image, DOCX, text, OCR), recursive chunking, sentence-transformers embeddings, hybrid search (vector + BM25/RRF), sqlite-vec and pgvector; multi-agent supervisor orchestration patterns (LangGraph-equivalent: supervisor node, conditional routing, async interrupt/resume).
 
 **Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, SQLite, ETL/ELT, data modeling, Data Lake, Redis, Blob, Azure Container Apps.
 
@@ -38,7 +38,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 
 **Leadership:** Technical strategy ownership in ambiguous problem spaces; cross-functional alignment from engineering to executive stakeholders; mentorship and technical leveling of engineering teams.
 
-**Communication:** Translating technical tradeoffs into clear recommendations for non-technical decision-makers; trusted advisor role in AI adoption for regulated domains; rapidly acquiring domain knowledge (epidemiology, global health) and translating it into production requirements.
+**Communication:** Translating technical tradeoffs into clear recommendations for non-technical decision-makers; trusted advisor role in AI adoption for regulated domains; rapidly acquiring domain knowledge (customer support, epidemiology, global health) and translating it into production requirements.
 
 **Professional:** Security-first mindset; responsible AI and data privacy focus; bias toward measurable outcomes over process.
 
@@ -47,7 +47,7 @@ Senior Software Engineer with 18+ years of experience across data engineering, A
 ### Legal Document Intelligence System
 *2025 - Present*
 
-Built a production RAG pipeline for legal document analysis: Gmail API and OneDrive source connectors, multi-format extraction (PDF, DOCX, EML, XLSX, OCR), classification-first metadata enrichment, recursive chunking tuned for legal prose, sentence-transformers embeddings (768 dims), and semantic search with sqlite-vec. Benchmarked chunk-level vs single-doc retrieval: chunk strategy scores 13% higher precision (0.538 vs 0.475 avg similarity) with only 42% result overlap, confirming chunks surface passage-level relevance that document-level embeddings miss. 314 documents, 4,391 chunks, sub-200ms queries.
+Built a production RAG pipeline for legal document analysis: Google and MS Graph API source connectors, multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), classification-first metadata enrichment, recursive chunking tuned for legal prose, sentence-transformers embeddings (768 dims), and semantic search with sqlite-vec. Benchmarked chunk-level vs single-doc retrieval: chunk strategy scores 13% higher precision (0.538 vs 0.475 avg similarity) with only 42% result overlap, confirming chunks surface passage-level relevance that document-level embeddings miss. 314 documents, 4,391 chunks, sub-200ms queries. Optimized for maximum read-dache tokens.
 
 Designed and operate a multi-agent assistant system with supervisor orchestration: primary agent routes tasks to specialized agents (code, legal, research) by type and cost. Async delegation pattern maps to LangGraph interrupt/resume. Each agent is tool-augmented with typed input/output schemas.
 
