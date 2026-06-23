@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(./convert.ps1)",
-      "PowerShell(& 'C:\\\\workspace\\\\personal_repos\\\\cuete.github.io\\\\resume\\\\convert.ps1' -InputFile 'C:\\\\workspace\\\\personal_repos\\\\cuete.github.io\\\\resume\\\\resume.md')"
-    ]
-  }
-}
