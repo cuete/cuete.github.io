@@ -13,22 +13,22 @@
 ```
 
 ```{=openxml}
-<w:p><w:pPr><w:pStyle w:val="Heading1"/><w:spacing w:before="0" w:after="0"/></w:pPr><w:r><w:t>Alejandro Echeverria</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr><w:r><w:rPr><w:color w:val="595959"/></w:rPr><w:t>Senior Data and AI Solutions Engineer</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r><w:fldChar w:fldCharType="begin"/></w:r><w:r><w:instrText xml:space="preserve"> HYPERLINK "mailto:nablaservices@outlook.com" </w:instrText></w:r><w:r><w:fldChar w:fldCharType="separate"/></w:r><w:r><w:rPr><w:rStyle w:val="Hyperlink"/></w:rPr><w:t>nablaservices@outlook.com</w:t></w:r><w:r><w:fldChar w:fldCharType="end"/></w:r><w:r><w:t xml:space="preserve">  |  </w:t></w:r><w:r><w:fldChar w:fldCharType="begin"/></w:r><w:r><w:instrText xml:space="preserve"> HYPERLINK "https://linkedin.com/in/cuete" </w:instrText></w:r><w:r><w:fldChar w:fldCharType="separate"/></w:r><w:r><w:rPr><w:rStyle w:val="Hyperlink"/></w:rPr><w:t>linkedin.com/in/cuete</w:t></w:r><w:r><w:fldChar w:fldCharType="end"/></w:r><w:r><w:t xml:space="preserve">  |  </w:t></w:r><w:r><w:fldChar w:fldCharType="begin"/></w:r><w:r><w:instrText xml:space="preserve"> HYPERLINK "https://github.com/cuete" </w:instrText></w:r><w:r><w:fldChar w:fldCharType="separate"/></w:r><w:r><w:rPr><w:rStyle w:val="Hyperlink"/></w:rPr><w:t>github.com/cuete</w:t></w:r><w:r><w:fldChar w:fldCharType="end"/></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading1"/><w:spacing w:before="0" w:after="0"/></w:pPr><w:r><w:t>Alejandro Echeverria</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before="0" w:after="120"/></w:pPr><w:r><w:rPr><w:color w:val="595959"/></w:rPr><w:t>Senior AI and Data Solutions Engineer</w:t></w:r></w:p><w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r><w:fldChar w:fldCharType="begin"/></w:r><w:r><w:instrText xml:space="preserve"> HYPERLINK "mailto:nablaservices@outlook.com" </w:instrText></w:r><w:r><w:fldChar w:fldCharType="separate"/></w:r><w:r><w:rPr><w:rStyle w:val="Hyperlink"/></w:rPr><w:t>nablaservices@outlook.com</w:t></w:r><w:r><w:fldChar w:fldCharType="end"/></w:r><w:r><w:t xml:space="preserve">  |  </w:t></w:r><w:r><w:fldChar w:fldCharType="begin"/></w:r><w:r><w:instrText xml:space="preserve"> HYPERLINK "https://linkedin.com/in/cuete" </w:instrText></w:r><w:r><w:fldChar w:fldCharType="separate"/></w:r><w:r><w:rPr><w:rStyle w:val="Hyperlink"/></w:rPr><w:t>linkedin.com/in/cuete</w:t></w:r><w:r><w:fldChar w:fldCharType="end"/></w:r><w:r><w:t xml:space="preserve">  |  </w:t></w:r><w:r><w:fldChar w:fldCharType="begin"/></w:r><w:r><w:instrText xml:space="preserve"> HYPERLINK "https://github.com/cuete" </w:instrText></w:r><w:r><w:fldChar w:fldCharType="separate"/></w:r><w:r><w:rPr><w:rStyle w:val="Hyperlink"/></w:rPr><w:t>github.com/cuete</w:t></w:r><w:r><w:fldChar w:fldCharType="end"/></w:r></w:p>
 ```
 
 ## Professional Summary
 
-Senior Software Engineer with 18+ years of experience across, AI systems, data engineering, and cloud-native software. I design and deploy production-ready AI pipelines, data platforms, and decision-support tools - translating complex technical requirements into scalable, secure, and measurable outcomes. Experience spans global health research, enterprise software at Microsoft, and AI consulting for healthcare and finance.
+Senior Software Engineer with 18+ years of experience across AI systems, data engineering, and cloud-native software. Designs and deploys production-ready AI pipelines, data platforms, and decision-support tools - translating complex technical requirements into scalable, secure, and measurable outcomes. Experience spans global health research, enterprise software at Microsoft, and AI consulting for healthcare and finance.
 
 ## Technical Skills
 
-**AI & ML:** LLMs, AI agents, multi-agent systems, RAG, NLP (natural language processing), intelligent automation, MLOps; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry; LangChain, LangGraph; knowledge graphs, semantic concept extraction; local LLMs for prototyping; Databricks; prompt, context, and token optimization (FinOps for AI); model selection, evaluation, and A/B testing; automated LLM-based quality scoring pipelines; AI guardrails and Responsible AI practices; document ingestion pipelines (multi-format: PDF, image, DOCX, text, OCR), recursive chunking, sentence-transformers embeddings, hybrid search (vector + BM25/RRF), sqlite-vec and pgvector; multi-agent supervisor orchestration patterns (LangGraph-equivalent: supervisor node, conditional routing, async interrupt/resume).
+**AI & ML:** LLMs, AI agents, multi-agent systems, RAG, NLP (natural language processing), MLOps, intelligent automation; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Databricks; knowledge graphs, semantic concept extraction, sentence-transformers embeddings; document ingestion pipelines (PDF, image, DOCX, text, OCR), recursive chunking, hybrid search (vector + BM25/RRF), supervisor orchestration patterns; prompt, context, and token optimization (FinOps for AI), model selection, evaluation, and A/B testing, automated LLM-based quality-scoring pipelines; AI guardrails and Responsible AI practices, local LLMs for prototyping.
 
-**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, SQLite, ETL/ELT, data modeling, Data Lake, Redis, Blob, Azure Container Apps.
+**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, SQLite, ETL/ELT, data modeling, Redis, Blob Storage; vector databases (pgvector, sqlite-vec); Azure Container Apps.
 
 **Languages:** Python, C#, JavaScript, TypeScript, React, R, SQL, PowerShell.
 
-**Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI, RESTful APIs; vector database (pgvector, sqlite-vec); async/parallel pipeline architecture; caching strategies for AI services; GitHub Copilot.
+**Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI, RESTful APIs; async/parallel pipeline architecture; caching strategies for AI services; GitHub Copilot.
 
 **Architecture & Frameworks:** Solutions Architecture; .NET, Node.js, Entity Framework; TCP/IP, HTTP, Zero Trust Network; SDL, Scrum, Agile, DevOps; machine learning systems design.
 
@@ -47,7 +47,7 @@ Senior Software Engineer with 18+ years of experience across, AI systems, data e
 ### Legal Document Intelligence System
 *2025 - Present*
 
-Built a production RAG pipeline for legal document analysis: Google and MS Graph API source connectors, multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), classification-first metadata enrichment, recursive chunking tuned for legal prose, sentence-transformers embeddings (768 dims), and semantic search with sqlite-vec. Benchmarked chunk-level vs single-doc retrieval: chunk strategy scores 13% higher precision (0.538 vs 0.475 avg similarity) with only 42% result overlap, confirming chunks surface passage-level relevance that document-level embeddings miss. 314 documents, 4,391 chunks, sub-200ms queries. Optimized for maximum read-dache tokens.
+Built a production RAG pipeline for legal document analysis: Google and MS Graph API source connectors, multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), classification-first metadata enrichment, recursive chunking tuned for legal prose, sentence-transformers embeddings (768 dims), and semantic search with sqlite-vec. Benchmarked chunk-level vs single-doc retrieval: chunk strategy scores 13% higher precision (0.538 vs 0.475 avg similarity) with only 42% result overlap, confirming chunks surface passage-level relevance that document-level embeddings miss. 314 documents, 4,391 chunks, sub-200ms queries. Optimized for maximum read-cache tokens.
 
 Designed and operate a multi-agent assistant system with supervisor orchestration: primary agent routes tasks to specialized agents (code, legal, research) by type and cost. Async delegation pattern maps to LangGraph interrupt/resume. Each agent is tool-augmented with typed input/output schemas.
 
@@ -85,13 +85,13 @@ Built a full-stack document intelligence platform for multi-source ingestion, se
 - Conducted threat modeling and implemented zero-trust security strategies to protect critical services and sensitive customer data; managed incident response for high-priority production outages.
 
 ### Software Engineer - Motiv Inc. (Microsoft Contract)
-*2017 – 2019*  
+*2017 - 2019*  
 *Redmond, WA*
 
 - Built secure, high-throughput cloud applications at Microsoft's Core Platform Engineering Group: APIs and microservices, vulnerability mitigation, data privacy compliance, DevOps, and security hardening.
 
 ### Software Engineer - Getty Images
-*2012 – 2017*  
+*2012 - 2017*  
 *Seattle, WA*
 
 - Developed and tested web services and databases for financial data processing and royalty calculations: .NET, relational databases, message brokers, monitoring platforms, CI/CD, and on-call engineering support.
