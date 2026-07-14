@@ -18,21 +18,23 @@
 
 ## Professional Summary
 
-Senior Software Engineer with 18+ years of experience across AI systems, data engineering, and cloud-native software. Designs and deploys production-ready AI pipelines, data platforms, and decision-support tools - translating complex technical requirements into scalable, secure, and measurable outcomes. Experience spans global health research, enterprise software at Microsoft, and AI consulting for healthcare and finance.
+Senior Software Engineer with 18+ years of experience across AI systems, data engineering, and cloud-native software. Designs and deploys production-ready AI pipelines, data platforms, and decision-support tools; translating complex technical requirements into scalable, secure, and measurable outcomes. Experience spans global health research, enterprise software at Microsoft, and AI consulting for healthcare and finance.
 
 ## Technical Skills
 
-**AI & ML:** LLMs, AI agents, multi-agent systems, RAG, NLP (natural language processing), MLOps, intelligent automation; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Databricks; knowledge graphs, semantic concept extraction, sentence-transformers embeddings; document ingestion pipelines (PDF, image, DOCX, text, OCR), recursive chunking, hybrid search (vector + BM25/RRF), supervisor orchestration patterns; prompt, context, and token optimization (FinOps for AI), model selection, evaluation, and A/B testing, automated LLM-based quality-scoring pipelines; AI guardrails and Responsible AI practices, local LLMs for prototyping.
+**AI & ML:** LLMs, AI agents, multi-agent systems, agentic BI, RAG, NLP (natural language processing), MLOps, intelligent automation; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Databricks; knowledge graphs, semantic concept extraction, sentence-transformers embeddings; document ingestion pipelines (PDF, image, DOCX, text, OCR), recursive chunking, hybrid search (vector + BM25/RRF), supervisor orchestration patterns; prompt, context, and token optimization (FinOps for AI), model selection, evaluation, and A/B testing, automated LLM-based quality-scoring pipelines; AI guardrails and Responsible AI practices, local LLMs for prototyping.
 
-**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, SQLite, ETL/ELT, data modeling, Redis, Blob Storage; vector databases (pgvector, sqlite-vec); Azure Container Apps.
+**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, SQLite, PostgreSQL, ETL/ELT, data modeling, Redis, Blob Storage; vector databases (pgvector, sqlite-vec); Azure Container Apps.
 
 **Languages:** Python, C#, JavaScript, TypeScript, React, R, SQL, PowerShell.
 
 **Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI, RESTful APIs; async/parallel pipeline architecture; caching strategies for AI services; GitHub Copilot.
 
-**Architecture & Frameworks:** Solutions Architecture; .NET, Node.js, Entity Framework; TCP/IP, HTTP, Zero Trust Network; SDL, Scrum, Agile, DevOps; machine learning systems design.
+**Architecture & Frameworks:** Solutions Architecture; algorithmic complexity and performance optimization at scale, design patterns; .NET, Node.js, Entity Framework; TCP/IP, HTTP, Zero Trust Network; SDL, Scrum, Agile, DevOps; machine learning systems design.
 
 **Security & Compliance:** Threat modeling, SAML, OAuth2.0, SSO; GDPR, CCPA, HIPAA; Linux systems administration and internals.
+
+**Electronics & Hardware:** Circuit analysis and troubleshooting, oscilloscopes and multimeters; grounded in a Bachelor's in Electronics Engineering.
 
 ## Soft Skills
 
@@ -62,16 +64,16 @@ Built a full-stack document intelligence platform for multi-source ingestion, se
 *2025 - Current*  
 *Seattle, WA*
 
-- Architected AI-powered epidemiology dashboards for national malaria eradication programs in Nigeria, Senegal, and Benin - surfacing disease indicators, intervention cost-effectiveness, and scenario simulations used by health ministries to drive policy decisions.
-- Built end-to-end data pipelines from disease simulation outputs to interactive decision-support visualizations for IDM researchers and partner institutions.
+- Architected AI-powered epidemiology dashboards for national malaria eradication programs in Nigeria, Senegal, and Benin; surfacing disease indicators, intervention cost-effectiveness, and scenario simulations used by health ministries to drive policy decisions.
+- Built a RAG-based agentic BI pipeline (Anthropic and OpenAI SDKs) that ingests raw epidemiology data and converts it into decision-support analyses and interactive, PostgreSQL-backed visualizations through a conversational interface for IDM researchers and partner institutions.
 - Applied production AI practices across the full pipeline: data quality controls, privacy-by-design, prompt engineering, evaluation pipelines, and DevSecOps for global health research environments.
-- Led cross-functional technical planning across research, engineering, and operations - translating epidemiology requirements into production AI systems adopted by partner institutions.
+- Led cross-functional technical planning across research, engineering, and operations; translating epidemiology requirements into production AI systems adopted by partner institutions.
 
 ### Senior AI Solutions Consultant - Dura Digital
 *2025 - Current*  
 *Seattle, WA*
 
-- Provided architectural direction and implementation strategy for healthcare and financial organizations adopting ML/AI tooling and infrastructure - serving as trusted technical advisor during early AI adoption phases.
+- Provided architectural direction and implementation strategy for healthcare and financial organizations adopting ML/AI tooling and infrastructure; serving as trusted technical advisor during early AI adoption phases.
 - Identified key constraints and designed implementation roadmaps to bridge gaps between existing infrastructure and planned AI-focused architectures, enabling clients to move from strategy to production with clear milestones.
 - Delivered secure, scalable, and compliant AI solutions for workflow automation, translating ambiguous business requirements into actionable technical plans with measurable outcomes.
 
