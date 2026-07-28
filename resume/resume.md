@@ -49,14 +49,13 @@ Senior Software Engineer with 18+ years of experience across AI systems, data en
 ### Legal Document Intelligence System
 *2025 - Present*
 
-Built a production RAG pipeline for legal document analysis: Google and MS Graph API source connectors, multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), classification-first metadata enrichment, recursive chunking tuned for legal prose, sentence-transformers embeddings (768 dims), and semantic search with sqlite-vec. Benchmarked chunk-level vs single-doc retrieval: chunk strategy scores 13% higher precision (0.538 vs 0.475 avg similarity) with only 42% result overlap, confirming chunks surface passage-level relevance that document-level embeddings miss. 314 documents, 4,391 chunks, sub-200ms queries. Optimized for maximum read-cache tokens.
-
-Designed and operate a multi-agent assistant system with supervisor orchestration: primary agent routes tasks to specialized agents (code, legal, research) by type and cost. Async delegation pattern maps to LangGraph interrupt/resume. Each agent is tool-augmented with typed input/output schemas.
+- Built a production RAG pipeline for legal document analysis: multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), recursive chunking, sentence-transformers embeddings, and semantic search with sqlite-vec; chunk-level retrieval scored 13% higher precision than single-doc embeddings across 314 documents and 4,391 chunks at sub-200ms query latency.
+- Designed a multi-agent assistant with supervisor orchestration, routing tasks to specialized tool-augmented agents (code, legal, research) by type and cost; async delegation maps to LangGraph interrupt/resume.
 
 ### Semantic Analysis Platform
 *2026 - Present*
 
-Built a full-stack document intelligence platform for multi-source ingestion, semantic analysis, and knowledge mapping. FastAPI backend + React frontend; ingests URLs, PDFs, and text with automated AI suspicion and quality ratings post-ingest. LLM pipeline performs semantic chunking by logical section (chapter/article boundaries), extracts concept graphs per section, merges partial graphs with deduplication, and runs a consolidation pass for semantic synonym resolution, covering 100% of the document. Fact-check feature extracts verifiable claims, queries Perplexity, and feeds results back into the quality score. Three synchronized views (concept map, chat, document) over the same content, with bidirectional highlight and navigation between views.
+- Built a full-stack document intelligence platform (FastAPI + React) for multi-source ingestion, semantic chunking, and concept-graph extraction/merging; includes a fact-check feature that verifies claims via Perplexity and feeds results into a document quality score, with three synchronized views (concept map, chat, document).
 
 ## Professional Experience
 
