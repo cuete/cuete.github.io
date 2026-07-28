@@ -38,7 +38,7 @@ Senior Software Engineer with 18+ years of experience across AI systems, data en
 
 ## Soft Skills
 
-**Leadership:** Technical strategy ownership in ambiguous problem spaces; cross-functional alignment from engineering to executive stakeholders; mentorship and technical leveling of engineering teams.
+**Leadership:** Technical strategy ownership in ambiguous problem spaces; cross-functional alignment from engineering to executive stakeholders; mentorship and technical leveling of engineering teams; recovering at-risk, cross-functional projects by resolving disconnects between technical teams and domain experts.
 
 **Communication:** Translating technical tradeoffs into clear recommendations for non-technical decision-makers; trusted advisor role in AI adoption for regulated domains; rapidly acquiring domain knowledge (customer support, epidemiology, global health) and translating it into production requirements.
 
@@ -68,6 +68,7 @@ Built a full-stack document intelligence platform for multi-source ingestion, se
 - Built a RAG-based agentic BI pipeline (Anthropic and OpenAI SDKs) that ingests raw epidemiology data and converts it into decision-support analyses and interactive, PostgreSQL-backed visualizations through a conversational interface for IDM researchers and partner institutions.
 - Applied production AI practices across the full pipeline: data quality controls, privacy-by-design, prompt engineering, evaluation pipelines, and DevSecOps for global health research environments.
 - Led cross-functional technical planning across research, engineering, and operations; translating epidemiology requirements into production AI systems adopted by partner institutions.
+- Took over a stalled Nigeria health facility budget analysis pipeline mid-project, embedding with public health researchers to reconcile a disconnect between the pipeline's technical capabilities and the analysis methodology; designed a retrofit plan aligned to the available data and brought the project back on schedule.
 
 ### Senior AI Solutions Consultant - Dura Digital
 *2025 - Current*  
