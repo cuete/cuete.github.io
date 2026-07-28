@@ -24,7 +24,7 @@ Senior Software Engineer with 18+ years of experience across AI systems, data en
 
 **AI & ML:** LLMs, AI agents, multi-agent systems, agentic BI, RAG, NLP (natural language processing), MLOps, intelligent automation; OpenAI SDK, Anthropic Claude SDK, Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Databricks; knowledge graphs, semantic concept extraction, sentence-transformers embeddings; document ingestion pipelines (PDF, image, DOCX, text, OCR), recursive chunking, hybrid search (vector + BM25/RRF), supervisor orchestration patterns; prompt, context, and token optimization (FinOps for AI), model selection, evaluation, and A/B testing, automated LLM-based quality-scoring pipelines; AI guardrails and Responsible AI practices, local LLMs for prototyping.
 
-**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Cosmos DB, Microsoft Fabric; SQL, NoSQL, SQLite, PostgreSQL, ETL/ELT, data modeling, Redis, Blob Storage; vector databases (pgvector, sqlite-vec); Azure Container Apps.
+**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Service Bus, Event Grid, Cosmos DB, Microsoft Fabric; SQL, NoSQL, SQLite, PostgreSQL, ETL/ELT, data modeling, Redis, Blob Storage; vector databases (pgvector, sqlite-vec); Azure Container Apps.
 
 **Languages:** Python, C#, JavaScript, TypeScript, React, R, SQL, PowerShell.
 
@@ -83,7 +83,7 @@ Senior Software Engineer with 18+ years of experience across AI systems, data en
 
 - Designed and shipped frontier ML/AI speech-to-text systems for enterprise customer support, reducing agent oversight overhead by 50% through intelligent automation and real-time AI assistance.
 - Built real-time and post-call customer satisfaction metric pipelines, enabling live supervisor awareness and KPI rollup evaluation across global support operations.
-- Architected and delivered large-scale cloud-native enterprise applications using Azure infrastructure (Data Factory, Event Hub, Data Lake, Cosmos DB), DevOps practices, and CI/CD automation.
+- Architected and delivered large-scale cloud-native enterprise applications and event-streaming pipelines using Azure infrastructure (Data Factory, Event Hub, Service Bus, Event Grid, Data Lake, Cosmos DB), DevOps practices, and CI/CD automation.
 - Conducted threat modeling and implemented zero-trust security strategies to protect critical services and sensitive customer data; managed incident response for high-priority production outages.
 
 ### Software Engineer - Motiv Inc. (Microsoft Contract)
