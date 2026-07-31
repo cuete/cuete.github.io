@@ -18,7 +18,7 @@
 
 ## Professional Summary
 
-Senior Software Engineer with 18+ years of experience across AI systems, data engineering, and cloud-native software. Designs and deploys production-ready AI pipelines, data platforms, and decision-support tools; translating complex technical requirements into scalable, secure, and measurable outcomes. Experience spans global health research, enterprise software at Microsoft, and AI consulting for healthcare and finance.
+Senior Software Engineer with 10+ years of experience in AI systems and 18+ years across data engineering, and cloud-native software. Designs and deploys production-ready AI pipelines, data platforms, and decision-support tools, embedding with domain experts to translate ambiguous business and research requirements into scalable, secure, and measurable outcomes across the full lifecycle: from proof-of-concept to high-scale production, from infrastructure to visualization, from requirements to maintenance. Owns technical architecture and mentors engineering teams through ambiguous, fast-moving problem spaces. Experience spans global health research, healthcare, customer support, and enterprise software.
 
 ## Technical Skills
 
@@ -28,13 +28,11 @@ Senior Software Engineer with 18+ years of experience across AI systems, data en
 
 **Languages:** Python, C#, JavaScript, TypeScript, React, R, SQL, PowerShell.
 
-**Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI, RESTful APIs; async/parallel pipeline architecture; caching strategies for AI services; GitHub Copilot.
+**Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI, RESTful APIs; async/parallel pipeline architecture; caching strategies for AI services.
 
-**Architecture & Frameworks:** Solutions Architecture; algorithmic complexity and performance optimization at scale, design patterns; .NET, Node.js, Entity Framework; TCP/IP, HTTP, Zero Trust Network; SDL, Scrum, Agile, DevOps; machine learning systems design.
+**Architecture & Frameworks:** Solutions Architecture; algorithmic complexity and performance optimization at scale, design patterns; .NET, Node.js, SDL, Scrum, Agile, DevOps; machine learning and RAG systems design.
 
-**Security & Compliance:** Threat modeling, SAML, OAuth2.0, SSO; GDPR, CCPA, HIPAA; Linux systems administration and internals.
-
-**Electronics & Hardware:** Circuit analysis and troubleshooting, oscilloscopes and multimeters; grounded in a Bachelor's in Electronics Engineering.
+**Security & Compliance:** Threat modeling, network topologies, firewalls, subnetting, Zero Trust Network, SAML, OAuth2.0, SSO; GDPR, CCPA, HIPAA.
 
 ## Soft Skills
 
@@ -49,7 +47,7 @@ Senior Software Engineer with 18+ years of experience across AI systems, data en
 ### Legal Document Intelligence System
 *2025 - Present*
 
-- Built a production RAG pipeline for legal document analysis: multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), recursive chunking, sentence-transformers embeddings, and semantic search with sqlite-vec; chunk-level retrieval scored 13% higher precision than single-doc embeddings across 314 documents and 4,391 chunks at sub-200ms query latency.
+- Built a production RAG pipeline for legal document classification and analysis: multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), recursive chunking, sentence-transformers embeddings, and semantic search with sqlite-vec; chunk-level retrieval scored 13% higher precision than single-doc embeddings across 314 documents and 4,391 chunks at sub-200ms query latency.
 - Designed a multi-agent assistant with supervisor orchestration, routing tasks to specialized tool-augmented agents (code, legal, research) by type and cost; async delegation maps to LangGraph interrupt/resume.
 
 ### Semantic Analysis Platform
