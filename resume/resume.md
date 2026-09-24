@@ -22,17 +22,15 @@ Senior Software Engineer with 10+ years of experience in AI and ML systems and 1
 
 ## Technical Skills
 
-**AI & ML:** LLMs, AI agents, multi-agent systems, agentic BI, RAG, NLP (natural language processing), MLOps; OpenAI SDK, Anthropic Claude SDK, Azure AI Foundry, LangChain, LangGraph, Databricks; AI-assisted development with Claude Code, GitHub Copilot, and Codex; knowledge graphs, semantic concept extraction, sentence-transformers embeddings; document ingestion pipelines (PDF, image, DOCX, text, OCR), recursive chunking, hybrid search (vector + BM25/RRF), supervisor orchestration patterns; prompt, context, and token optimization (FinOps for AI), model selection, evaluation, and A/B testing, automated LLM-based quality-scoring pipelines; AI guardrails and Responsible AI practices, local LLMs for prototyping.
+**AI & ML:** LLMs, AI agents and multi-agent systems (supervisor orchestration), agentic BI, RAG, NLP, MLOps; OpenAI and Anthropic Claude SDKs, Azure AI Foundry, LangChain, LangGraph, Databricks; hybrid search (vector + BM25/RRF), embeddings, knowledge graphs, document ingestion and OCR; model selection, evaluation, A/B testing, and LLM-based quality scoring; prompt, context, and token optimization (FinOps for AI); Responsible AI and guardrails; AI-assisted development (Claude Code, GitHub Copilot, Codex).
 
-**Data & Cloud:** Azure Data Factory, Synapse Analytics, Analysis Services, Data Lake Storage, Event Hub, Service Bus, Event Grid, Cosmos DB, Microsoft Fabric, Azure AI Search; SQL, NoSQL, SQLite, PostgreSQL, ETL/ELT, data modeling, Redis, Blob Storage; vector databases (pgvector, sqlite-vec); Azure Container Apps.
+**Data & Cloud:** Azure (Data Factory, Synapse, Analysis Services, Data Lake, Event Hub, Service Bus, Event Grid, Cosmos DB, AI Search, Container Apps, Blob Storage), Microsoft Fabric; PostgreSQL, SQLite, Redis, pgvector, sqlite-vec; ETL/ELT, data modeling.
 
-**Languages:** Python, C#, JavaScript, TypeScript, React, R, SQL, PowerShell.
+**Languages & Frameworks:** Python, C#, TypeScript, JavaScript, React, R, SQL, PowerShell; .NET, Node.js, FastAPI.
 
-**Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; ARM, Terraform, Bicep (IaC); FastAPI, RESTful APIs; async/parallel pipeline architecture; caching strategies for AI services.
+**Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; Terraform, Bicep, ARM; REST APIs, async/parallel pipelines, caching for AI services.
 
-**Architecture & Frameworks:** Solutions Architecture; algorithmic complexity and performance optimization at scale, design patterns; .NET, Node.js, SDL, Scrum, Agile, DevOps; machine learning and RAG systems design.
-
-**Security & Compliance:** Threat modeling, network topologies, firewalls, subnetting, Zero Trust Network, SAML, OAuth2.0, SSO; GDPR, CCPA, HIPAA.
+**Architecture & Security:** Solutions architecture, design patterns, algorithmic complexity and performance optimization at scale; threat modeling, SDL, Zero Trust, firewalls, subnetting, OAuth 2.0, SAML, SSO; GDPR, CCPA, HIPAA.
 
 ## Soft Skills
 
