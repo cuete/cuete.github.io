@@ -18,7 +18,7 @@
 
 ## Professional Summary
 
-Senior Software Engineer with 10+ years of experience in AI and ML systems and 18+ years across data and software engineering. Designs and deploys production-ready AI pipelines, data platforms, and decision-support tools, embedding with domain experts to translate ambiguous business and research requirements into scalable, secure, and measurable outcomes across the full lifecycle: from proof-of-concept to high-scale production, from infrastructure to visualization, from requirements to maintenance. Owns technical architecture and mentors engineering teams through ambiguous, fast-moving problem spaces. Experience spans global health research, healthcare, customer support, and enterprise software.
+Senior Engineer with 10+ years of experience in AI and ML systems and 18+ years across data and software engineering. Designs and deploys production-ready AI pipelines, data platforms, and decision-support tools, embedding with domain experts to translate ambiguous business and research requirements into scalable, secure, and measurable outcomes across the full lifecycle: from proof-of-concept to high-scale production, from infrastructure to visualization, from requirements to maintenance. Owns technical architecture and mentors engineering teams through ambiguous, fast-moving problem spaces. Experience spans global health research, healthcare, customer support, and enterprise software.
 
 ## Technical Skills
 
@@ -43,19 +43,19 @@ Senior Software Engineer with 10+ years of experience in AI and ML systems and 1
 ## Personal Projects
 
 ### Legal Document Intelligence System
-*2025 - Present*
+*2025 - Current*
 
 - Built a production RAG pipeline for legal document classification and analysis: multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), recursive chunking, and sentence-transformers embeddings; chunk-level retrieval scored 13% higher precision than single-doc embeddings at sub-200ms query latency.
 - Implemented lexical (SQLite FTS5, BM25 ranking) and semantic (sqlite-vec) search over two knowledge bases (~4,400 case documents and ~1,400 statutes and court rules), with metadata filters (file type, category, date range) and minimum-score thresholds to ground agent answers in retrieved sources.
 - Designed a multi-agent assistant with supervisor orchestration, routing tasks to specialized tool-augmented agents (code, legal, research) by type and cost; async delegation maps to interrupt/resume.
 
 ### Semantic Analysis Platform
-*2026 - Present*
+*2026 - Current*
 
 - Built a full-stack document intelligence platform (FastAPI + React) for multi-source ingestion, semantic chunking, and concept-graph extraction/merging; includes a fact-check feature that verifies claims via Perplexity and feeds results into a document quality score, with three synchronized views (concept map, chat, document).
 
 ### Shared Agent Context Store
-*2026 - Present*
+*2026 - Current*
 
 - Building a single context store that AI agents across different clients and devices read and write through one remote MCP server, replacing separate per-tool memory files that had drifted out of sync; deployed on Azure Container Apps (scale-to-zero) with SQLite storage, lexical, fuzzy, and semantic search, token authentication, and encryption for sensitive data.
 
