@@ -47,13 +47,19 @@ Senior Software Engineer with 10+ years of experience in AI and ML systems and 1
 ### Legal Document Intelligence System
 *2025 - Present*
 
-- Built a production RAG pipeline for legal document classification and analysis: multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), recursive chunking, sentence-transformers embeddings, and semantic search with sqlite-vec; chunk-level retrieval scored 13% higher precision than single-doc embeddings at sub-200ms query latency.
+- Built a production RAG pipeline for legal document classification and analysis: multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), recursive chunking, and sentence-transformers embeddings; chunk-level retrieval scored 13% higher precision than single-doc embeddings at sub-200ms query latency.
+- Implemented lexical (SQLite FTS5, BM25 ranking) and semantic (sqlite-vec) search over two knowledge bases (~4,400 case documents and ~1,400 statutes and court rules), with metadata filters (file type, category, date range) and minimum-score thresholds to ground agent answers in retrieved sources.
 - Designed a multi-agent assistant with supervisor orchestration, routing tasks to specialized tool-augmented agents (code, legal, research) by type and cost; async delegation maps to interrupt/resume.
 
 ### Semantic Analysis Platform
 *2026 - Present*
 
 - Built a full-stack document intelligence platform (FastAPI + React) for multi-source ingestion, semantic chunking, and concept-graph extraction/merging; includes a fact-check feature that verifies claims via Perplexity and feeds results into a document quality score, with three synchronized views (concept map, chat, document).
+
+### Shared Agent Context Store
+*2026 - Present*
+
+- Building a single context store that AI agents across different clients and devices read and write through one remote MCP server, replacing separate per-tool memory files that had drifted out of sync; deployed on Azure Container Apps (scale-to-zero) with SQLite storage, lexical, fuzzy, and semantic search, token authentication, and encryption for sensitive data.
 
 ## Professional Experience
 
