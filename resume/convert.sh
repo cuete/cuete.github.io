@@ -5,6 +5,8 @@
 # everything else uses resume-template.docx. The intermediate .docx is
 # deleted once the PDF is confirmed to exist and be nonzero size - only
 # .md and .pdf should remain (see feedback_job_applications memory).
+# Resumes in this script's own folder (the baseline) also get a standalone
+# .html styled with resume.css; files elsewhere (job applications) don't.
 # Usage: ./convert.sh [file1.md file2.md ...]   (default: resume.md)
 
 set -euo pipefail
@@ -19,6 +21,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 RESUME_TEMPLATE="$SCRIPT_DIR/resume-template.docx"
 COVER_TEMPLATE="$SCRIPT_DIR/cover-template.docx"
 LUA_FILTER="$SCRIPT_DIR/strip-ids.lua"
+HTML_CSS="$SCRIPT_DIR/resume.css"
 
 INPUT_FILES=("${@:-resume.md}")
 
@@ -47,6 +50,15 @@ for INPUT_FILE in "${INPUT_FILES[@]}"; do
   fi
 
   echo -e "\n${CYAN}Converting: $INPUT_PATH${RESET}"
+
+  if [[ "$DIR" == "$SCRIPT_DIR" && "$BASE" != *_cover* ]]; then
+    HTML_PATH="$DIR/$BASE.html"
+    if (cd "$DIR" && pandoc "$INPUT_PATH" -s --embed-resources --css "$(basename "$HTML_CSS")" --metadata pagetitle="$BASE" -o "$HTML_PATH" 2>/dev/null); then
+      echo -e "  ${GREEN}[HTML]  OK -> $HTML_PATH${RESET}"
+    else
+      echo -e "  ${RED}[HTML]  FAILED${RESET}"
+    fi
+  fi
 
   if ! pandoc "$INPUT_PATH" -o "$DOCX_PATH" --reference-doc="$TEMPLATE" --lua-filter="$LUA_FILTER" 2>/dev/null; then
     echo -e "  ${RED}[DOCX]  FAILED${RESET}"

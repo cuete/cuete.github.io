@@ -8,6 +8,8 @@
     everything else uses resume-template.docx. The intermediate .docx is
     deleted once the PDF is confirmed to exist and be nonzero size - only
     .md and .pdf should remain (see feedback_job_applications memory).
+    Resumes in this script's own folder (the baseline) also get a standalone
+    .html styled with resume.css; files elsewhere (job applications) don't.
 .PARAMETER InputFiles
     Paths to the input .md files (default: resume.md)
 #>
@@ -21,6 +23,7 @@ $scriptDir      = Split-Path -Parent $MyInvocation.MyCommand.Path
 $resumeTemplate = Join-Path $scriptDir "resume-template.docx"
 $coverTemplate  = Join-Path $scriptDir "cover-template.docx"
 $luaFilter      = Join-Path $scriptDir "strip-ids.lua"
+$htmlCss        = Join-Path $scriptDir "resume.css"
 $soffice        = "C:\Program Files\LibreOffice\program\soffice.exe"
 
 foreach ($InputFile in $InputFiles) {
@@ -44,6 +47,19 @@ foreach ($InputFile in $InputFiles) {
     $template = if ($baseName -like "*_cover*") { $coverTemplate } else { $resumeTemplate }
 
     Write-Host "`nConverting: $inputPath" -ForegroundColor Cyan
+
+    if ($dir -eq $scriptDir -and $baseName -notlike "*_cover*") {
+        $htmlPath = Join-Path $dir "$baseName.html"
+        Push-Location $dir
+        & pandoc "$inputPath" -s --embed-resources --css (Split-Path -Leaf $htmlCss) --metadata pagetitle="$baseName" -o "$htmlPath" 2>&1 | Out-Null
+        $htmlExit = $LASTEXITCODE
+        Pop-Location
+        if ($htmlExit -eq 0) {
+            Write-Host "  [HTML]  OK -> $htmlPath" -ForegroundColor Green
+        } else {
+            Write-Host "  [HTML]  FAILED" -ForegroundColor Red
+        }
+    }
 
     & pandoc "$inputPath" -o "$docxPath" --reference-doc="$template" --lua-filter="$luaFilter" 2>&1 | Out-Null
     if ($LASTEXITCODE -ne 0) {
