@@ -46,7 +46,7 @@ Senior Engineer with 10+ years of experience in AI and ML systems and 18+ years 
 *2025 - Current*
 
 - Built a production RAG pipeline for legal document classification and analysis: multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), recursive chunking, and sentence-transformers embeddings; chunk-level retrieval scored 13% higher precision than single-doc embeddings at sub-200ms query latency.
-- Implemented lexical (SQLite FTS5, BM25 ranking) and semantic (sqlite-vec) search over two knowledge bases (~4,400 case documents and ~1,400 statutes and court rules), with metadata filters (file type, category, date range) and minimum-score thresholds to ground agent answers in retrieved sources.
+- Implemented lexical (SQLite FTS5, BM25 ranking) and semantic (sqlite-vec) search over two knowledge bases (~5,100 case documents and ~1,450 statutes and court rules, ~83,000 chunks), with metadata filters (file type, category, date range) and minimum-score thresholds to ground agent answers in retrieved sources.
 - Designed a multi-agent assistant with supervisor orchestration, routing tasks to specialized tool-augmented agents (code, legal, research) by type and cost; async delegation maps to interrupt/resume.
 
 ### Semantic Analysis Platform
