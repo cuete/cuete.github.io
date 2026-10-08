@@ -281,20 +281,18 @@ process.</p>
 System</h3>
 <p><em>2025 - Current</em></p>
 <ul>
-<li>Built a production RAG pipeline for legal document classification
-and analysis: multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR),
-recursive chunking, and sentence-transformers embeddings; chunk-level
-retrieval scored 13% higher precision than single-doc embeddings at
-sub-200ms query latency.</li>
-<li>Implemented lexical (SQLite FTS5, BM25 ranking) and semantic
-(sqlite-vec) search over two knowledge bases (~5,100 case documents and
-~1,450 statutes and court rules, ~83,000 chunks), with metadata filters (file type,
-category, date range) and minimum-score thresholds to ground agent
-answers in retrieved sources.</li>
-<li>Designed a multi-agent assistant with supervisor orchestration,
-routing tasks to specialized tool-augmented agents (code, legal,
-research) by type and cost; async delegation maps to
-interrupt/resume.</li>
+<li>Built a production RAG system over ~5,100 case documents and ~1,450
+statutes and court rules (~83,000 chunks); multi-format extraction with
+OCR, hybrid lexical (FTS5/BM25) and semantic (sqlite-vec) search, and
+minimum-score thresholds that keep agent answers grounded in retrieved
+sources; chunk-level retrieval scored 13% higher precision than
+single-doc embeddings at sub-200ms latency.</li>
+<li>Designed a multi-agent assistant with supervisor orchestration that
+routes work to specialized agents (code, legal, research) by task type
+and cost.</li>
+<li>Built custom MCP servers giving the agents access to document
+sources (chat, email, and file storage) to provide them with one safe,
+shared access point.</li>
 </ul>
 <h3 id="semantic-analysis-platform">Semantic Analysis Platform</h3>
 <p><em>2026 - Current</em></p>
@@ -302,18 +300,19 @@ interrupt/resume.</li>
 <li>Built a full-stack document intelligence platform (FastAPI + React)
 for multi-source ingestion, semantic chunking, and concept-graph
 extraction/merging; includes a fact-check feature that verifies claims
-via Perplexity and feeds results into a document quality score, with
-three synchronized views (concept map, chat, document).</li>
+via Perplexity, evaluates AI-generated suspicion score, and feeds
+results into a document quality score. Displays semantic representations
+of the document with three synchronized views (concept map, chat,
+document).</li>
 </ul>
 <h3 id="shared-agent-context-store">Shared Agent Context Store</h3>
 <p><em>2026 - Current</em></p>
 <ul>
 <li>Building a single context store that AI agents across different
 clients and devices read and write through one remote MCP server,
-replacing separate per-tool memory files that had drifted out of sync;
-deployed on Azure Container Apps (scale-to-zero) with SQLite storage,
-lexical, fuzzy, and semantic search, token authentication, and
-encryption for sensitive data.</li>
+replacing separate per-tool memory files; deployed on Azure Container
+Apps with SQLite storage, lexical, fuzzy, and semantic search, token
+authentication, and encryption for sensitive data.</li>
 </ul>
 <h2 id="professional-experience">Professional Experience</h2>
 <h3 id="senior-software-engineer-data-and-statistical-modeling---gates-foundation">Senior

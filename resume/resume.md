@@ -45,19 +45,19 @@ Senior Engineer with 10+ years of experience in AI and ML systems and 18+ years 
 ### Legal Document Intelligence System
 *2025 - Current*
 
-- Built a production RAG pipeline for legal document classification and analysis: multi-format extraction (PDF, DOCX, EML, JPG, XLSX, OCR), recursive chunking, and sentence-transformers embeddings; chunk-level retrieval scored 13% higher precision than single-doc embeddings at sub-200ms query latency.
-- Implemented lexical (SQLite FTS5, BM25 ranking) and semantic (sqlite-vec) search over two knowledge bases (~5,100 case documents and ~1,450 statutes and court rules, ~83,000 chunks), with metadata filters (file type, category, date range) and minimum-score thresholds to ground agent answers in retrieved sources.
-- Designed a multi-agent assistant with supervisor orchestration, routing tasks to specialized tool-augmented agents (code, legal, research) by type and cost; async delegation maps to interrupt/resume.
+- Built a production RAG system over ~5,100 case documents and ~1,450 statutes and court rules (~83,000 chunks); multi-format extraction with OCR, hybrid lexical (FTS5/BM25) and semantic (sqlite-vec) search, and minimum-score thresholds that keep agent answers grounded in retrieved sources; chunk-level retrieval scored 13% higher precision than single-doc embeddings at sub-200ms latency.
+- Designed a multi-agent assistant with supervisor orchestration that routes work to specialized agents (code, legal, research) by task type and cost.
+- Built custom MCP servers giving the agents access to document sources (chat, email, and file storage) to provide them with one safe, shared access point.
 
 ### Semantic Analysis Platform
 *2026 - Current*
 
-- Built a full-stack document intelligence platform (FastAPI + React) for multi-source ingestion, semantic chunking, and concept-graph extraction/merging; includes a fact-check feature that verifies claims via Perplexity and feeds results into a document quality score, with three synchronized views (concept map, chat, document).
+- Built a full-stack document intelligence platform (FastAPI + React) for multi-source ingestion, semantic chunking, and concept-graph extraction/merging; includes a fact-check feature that verifies claims via Perplexity, evaluates AI-generated suspicion score, and feeds results into a document quality score. Displays semantic representations of the document with three synchronized views (concept map, chat, document).
 
 ### Shared Agent Context Store
 *2026 - Current*
 
-- Building a single context store that AI agents across different clients and devices read and write through one remote MCP server, replacing separate per-tool memory files that had drifted out of sync; deployed on Azure Container Apps (scale-to-zero) with SQLite storage, lexical, fuzzy, and semantic search, token authentication, and encryption for sensitive data.
+- Building a single context store that AI agents across different clients and devices read and write through one remote MCP server, replacing separate per-tool memory files; deployed on Azure Container Apps with SQLite storage, lexical, fuzzy, and semantic search, token authentication, and encryption for sensitive data.
 
 ## Professional Experience
 
