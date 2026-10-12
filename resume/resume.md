@@ -26,7 +26,7 @@ Senior Engineer with 10+ years of experience in AI and ML systems and 18+ years 
 
 **Data & Cloud:** Azure (Data Factory, Synapse, Analysis Services, Data Lake, Event Hub, Service Bus, Event Grid, Cosmos DB, AI Search, Container Apps, Blob Storage), Microsoft Fabric; PostgreSQL, SQLite, Redis, pgvector, sqlite-vec; ETL/ELT, data modeling.
 
-**Languages & Frameworks:** Python, C#, TypeScript, JavaScript, React, R, SQL, PowerShell; .NET, Node.js, FastAPI.
+**Languages & Frameworks:** Python, C#, TypeScript, JavaScript, React, R, SQL, PowerShell; .NET, Node.js, FastAPI, GeoPandas (geospatial and geolocation data analysis, mapping).
 
 **Infrastructure & DevOps:** Docker, Kubernetes; Azure DevOps, GitHub Actions, Drone; Terraform, Bicep, ARM; REST APIs, async/parallel pipelines, caching for AI services.
 
@@ -65,7 +65,7 @@ Senior Engineer with 10+ years of experience in AI and ML systems and 18+ years 
 *2025 - 2026*  
 *Seattle, WA*
 
-- Architected AI-powered epidemiology dashboards for national malaria eradication programs in Nigeria, Senegal, and Benin; surfaced disease indicators, intervention cost-effectiveness, and scenario simulations used by health ministries to drive policy decisions.
+- Architected AI-powered epidemiology dashboards, including geospatial analysis and mapping of geolocation and disease data with GeoPandas, for national malaria eradication programs in Nigeria, Senegal, and Benin; surfaced disease indicators, intervention cost-effectiveness, and scenario simulations used by health ministries to drive policy decisions.
 - Built a RAG-based agentic BI pipeline (Anthropic and OpenAI SDKs) that ingested raw epidemiology data and converted it into decision-support analyses and interactive, PostgreSQL-backed visualizations through a conversational interface for public health researchers and partner institutions.
 - Applied production AI practices across the full pipeline: data quality controls, privacy-by-design, prompt engineering, evaluation pipelines, and DevSecOps for global health research environments.
 - Led cross-functional technical planning across research, engineering, and operations; translated epidemiology requirements into production AI systems adopted by partner institutions.
