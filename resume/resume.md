@@ -116,5 +116,6 @@ Universidad del Valle de Guatemala
 
 - Agile Project Management, Google
 - Azure Security Engineer Associate, Microsoft
+- Building with the Claude API, Anthropic
 - Solutions Architecture, University of Washington
 - Telecommunications and Networks, America Movil
