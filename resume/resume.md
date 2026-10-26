@@ -114,8 +114,8 @@ Universidad del Valle de Guatemala
 
 ## Certifications
 
+- Building with the Claude API, Anthropic
 - Agile Project Management, Google
 - Azure Security Engineer Associate, Microsoft
-- Building with the Claude API, Anthropic
 - Solutions Architecture, University of Washington
 - Telecommunications and Networks, America Movil
